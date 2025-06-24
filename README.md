@@ -1,8 +1,78 @@
 # Code samples for Microsoft identity platform documentation - .NET, C\#
 
-The sample applications in this repository contain code that backs tutorials and other articles on https://learn.microsoft.com.
+Welcome to the Microsoft Identity Platform .NET Code Samples repository!
 
-Each project demonstrates one or more aspects of using the Microsoft identity platform and Microsoft's open-source authentication libraries to add identity and access management (IAM) functionality to an application.
+This repository provides a comprehensive set of end-to-end samples demonstrating how to integrate Microsoft Entra ID authentication and authorization into .NET applications. The samples are organized by scenario and technology, making it easy to find the right starting point for your needs.
+
+## 📁 Repository Structure
+
+The samples are grouped into five main categories, each corresponding to a common application scenario:
+
+│ ├── 1-server-side/ # Web APIs, Daemon apps, Blazor Server, ASP.NET Core ├── 2-client-side/ # SPA apps (Angular, React, Vue, Blazor WASM) ├── 3-desktop/ # WinForms, WPF, WinUI, Console ├── 4-migration/ # Migration guides (e.g., ADFS to Azure AD) ├── 5-advanced/ # Advanced scenarios (e.g., distributed token cache) └── README.md
+
+Each scenario folder contains one or more samples, each with its own README and instructions.
+
+---
+
+## 🗂️ Sample Scenarios
+
+| Folder             | Description                                                                                   |
+|--------------------|----------------------------------------------------------------------------------------------|
+| **1-server-side**  | Server-side web apps and APIs using ASP.NET Core, Blazor Server, and daemon/background apps. |
+| **2-client-side**  | Single-page applications (SPA) using Blazor WASM, Angular, React, or Vue.                    |
+| **3-desktop**      | Desktop applications using WinForms, WPF, WinUI, or Console.                                 |
+| **4-migration**    | Migration playbooks and samples (e.g., ADFS to Azure AD).                                    |
+| **5-advanced**     | Advanced scenarios such as distributed token cache, multi-tenant, and custom policies.        |
+
+---
+
+## 🚀 Getting Started
+
+1. **Browse the scenario folders** above to find the sample that matches your use case.
+2. **Read the sample’s README.md** for prerequisites, setup instructions, and code walkthroughs.
+3. **Clone and run the sample** following the provided steps.
+
+All samples are built with the latest supported .NET versions and Microsoft.Identity libraries.
+
+---
+
+## 🔍 Finding the Right Sample
+
+- **By scenario:** Start with the folder that matches your application type (server-side, client-side, desktop, migration, advanced).
+- **By technology:** Within each folder, samples are organized by technology (e.g., ASP.NET Core, WPF, WinForms).
+- **By feature:** Each sample README highlights the authentication flow, APIs called, and any advanced features.
+
+---
+
+## 📝 Configuration & Security
+
+- **Configuration** is managed via `appsettings.json` and environment variables.
+- **Secrets and credentials** should never be committed to source control. Use [Azure Key Vault](https://learn.microsoft.com/azure/key-vault/general/basic-concepts) or environment variables for sensitive data.
+- **PowerShell scripts** are provided where helpful for Azure AD app registration.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions!  
+Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting new samples or improvements.
+
+---
+
+## 📢 Support & Feedback
+
+- For questions, open an [issue](https://github.com/your-org/ms-identity-docs-code-dotnet/issues).
+- For Microsoft identity platform documentation, visit [docs.microsoft.com/azure/active-directory/develop](https://docs.microsoft.com/azure/active-directory/develop).
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Happy coding!
 
 ## Contents
 
