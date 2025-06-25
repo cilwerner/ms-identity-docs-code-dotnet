@@ -3,9 +3,9 @@
 
 ## Scenario
 
-You have a web application using SAML protocol on Azure AD and you would like to migrate it to use OpenID Connect protocol.
+You have a web application using SAML protocol on Microsoft Entra and you would like to migrate it to use OpenID Connect protocol.
 
-Here we migrate the provided ASP.NET web application that uses the [SAML](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) protocol to authenticate users and registered in your Azure Active Directory tenant to the [OAuth 2.0 and OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols). The web application project can be found in [chapter 1-1](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad/tree/master/1-ADFS-Host/1-1-Setup-SAML-Playground/README.md).
+Here we migrate the provided ASP.NET web application that uses the [SAML](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) protocol to authenticate users and registered in your Microsoft Entra tenant to the [OAuth 2.0 and OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols). The web application project can be found in [chapter 1-1](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad/tree/master/1-ADFS-Host/1-1-Setup-SAML-Playground/README.md).
 
 This sample uses the `Microsoft.Owin.Security.WsFederation` library for authenticating users using SAML, which we will change to use the `Microsoft.Owin.Security.OpenIdConnect` library instead.
 
@@ -15,20 +15,20 @@ Application developers might consider this to enable their applications to be ab
 
 - [Visual Studio](https://aka.ms/vsdownload)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework)
-- An Azure Active Directory (Azure AD) tenant. For more information on how to get an Azure AD tenant, see [How to get an Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
 
 ## Migrate from SAML to OpenID Connect
 
-Azure Azure Active Directory supports application using both [SAML protocol](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) and [OAuth 2.0 and OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols) for authentication.
+Azure Microsoft Entra supports application using both [SAML protocol](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) and [OAuth 2.0 and OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols) for authentication.
 
-If you have a application using SAML registered on Azure AD today, you can use the same application registration to enable authentication using [OAuth 2.0 and OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols), thus requiring minimal code changes.
+If you have a application using SAML registered on Microsoft Entra today, you can use the same application registration to enable authentication using [OAuth 2.0 and OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols), thus requiring minimal code changes.
 
-### Application changes in Azure Active Directory
+### Application changes in Microsoft Entra ID
 
 First, sign in to the [Azure portal](https://portal.azure.com) and:
 
-1. Record the `TenantId`, which can be found in the [Azure Active Directory menu](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-2. Record the `ClientId` of the SAML application that is already registered on Azure AD. To find it, navigate to **App Registrations**, search for the application name and copy the value for the **Application (client) ID** column.
+1. Record the `TenantId`, which can be found in the [Microsoft Entra menu](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+2. Record the `ClientId` of the SAML application that is already registered on Microsoft Entra. To find it, navigate to **App Registrations**, search for the application name and copy the value for the **Application (client) ID** column.
 3. Add Microsoft Graph delegated permission `User.Read` to the application:
     - Open the application registration
     - Navigate to **API Permissions** on the left blade
@@ -99,5 +99,5 @@ We're always listening, and if you want to get in touch with you directly, send 
 
 ### Useful resources
 
-- [Moving application authentication from AD FS to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
+- [Moving application authentication from AD FS to Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
 - [Configure SAML-based single sign-on to non-gallery applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)

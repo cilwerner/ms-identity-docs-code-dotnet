@@ -1,25 +1,25 @@
-# Migrating a .NET MVC application using SAML protocol from AD FS to Azure Active Directory
+# Migrating a .NET MVC application using SAML protocol from AD FS to Microsoft Entra ID
 
 ## Scenario
 
-Here we migrate the provided ASP.NET web application that uses the [SAML](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) protocol to authenticate users and integrated with AD FS, to your Azure Active Directory tenant.
+Here we migrate the provided ASP.NET web application that uses the [SAML](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) protocol to authenticate users and integrated with AD FS, to your Microsoft Entra tenant.
 
 ## About the sample
 
 In the previous [chapter 1-1](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad/tree/master/1-ADFS-Host/1-1-Setup-SAML-Playground/README.md) we integrated an ASP.NET web application with an AD FS instance.
 
-After the migration, this sample will use the `App Federation Metadata Url` from the Azure Active Directory tenant, for authentication.
+After the migration, this sample will use the `App Federation Metadata Url` from the Microsoft Entra tenant, for authentication.
 
 ### Prerequisites
 
 - [Visual Studio](https://aka.ms/vsdownload)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework)
 - An AD FS environment
-- An Azure Active Directory (Azure AD) tenant. For more information on how to get an Azure Active Directory tenant, see [How to get an Azure Active Directory tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
 
-## Migrate the SAML application from ADFSto Azure Active Directory
+## Migrate the SAML application from ADFSto Microsoft Entra ID
 
-### Register the SAML application in Azure Active Directory
+### Register the SAML application in Microsoft Entra ID
 
 1. Sign in to the [Azure portal](https://portal.azure.com) using a tenant admin account.
 1. Navigate to the Microsoft identity platform for developers [Enterprise applications](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/EnterpriseApps) page.
@@ -33,16 +33,16 @@ After the migration, this sample will use the `App Federation Metadata Url` from
 
 1. To edit the basic SAML configuration options, select the **Edit** icon (a pencil) in the upper-right corner of the Basic SAML Configuration section.
 1. Set **Identifier (Entity ID)** with an unique URL that follows the pattern, `http://{your-appName}.{your-domain}.com`. For instance: `http://webappsaml.contoso.com`. Copy the Entity ID value to be used in later steps.
-1. Set **Reply URL** with the URL that Azure AD will reply after the authentication. In this sample we are using `https://localhost:44347/`.
-1. [Optional] Set the optional parameters if they are required in your scenario. The guide [Moving application authentication from Active Directory Federation Services to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure) is an excellent resource to learn about the various available options.
+1. Set **Reply URL** with the URL that Microsoft Entra will reply after the authentication. In this sample we are using `https://localhost:44347/`.
+1. [Optional] Set the optional parameters if they are required in your scenario. The guide [Moving application authentication from Active Directory Federation Services to Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure) is an excellent resource to learn about the various available options.
 
-Learn more about [configuring SAML-based single sign-on in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications).
+Learn more about [configuring SAML-based single sign-on in Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications).
 
 #### Configure user attributes and claims
 
 By default, the claims *givenname*, *surname*, *emailaddress* and *name* will be already configured for the application.
 
-The web application registered on [chapter 1](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad/tree/master/1-ADFS-Host/1-1-Setup-SAML-Playground/README.md) also uses **Employee-ID** claim, so we need to configure that as well. If you added extra claims on the AD FS registration of the web application, follow the steps below to register all the additional claims that should be returned by the Azure AD SAML application:
+The web application registered on [chapter 1](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad/tree/master/1-ADFS-Host/1-1-Setup-SAML-Playground/README.md) also uses **Employee-ID** claim, so we need to configure that as well. If you added extra claims on the AD FS registration of the web application, follow the steps below to register all the additional claims that should be returned by the Microsoft Entra SAML application:
 
 1. In the **User Attributes and Claims** section, select the **Edit** icon (a pencil) in the upper-right corner.
 1. Add additional claims that you would like to use in the web app project.
@@ -61,7 +61,7 @@ The web application registered on [chapter 1](https://github.com/Azure-Samples/m
 
 ### Customize Claims Emitted in Tokens
 
-In Azure AD, it is possible to customize claims emitted in tokens for specific applications. Check the [permitted values that can be emitted](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#table-3-valid-id-values-per-source) and [SAML exceptions and restrictions](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#exceptions-and-restrictions).
+In Microsoft Entra, it is possible to customize claims emitted in tokens for specific applications. Check the [permitted values that can be emitted](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#table-3-valid-id-values-per-source) and [SAML exceptions and restrictions](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#exceptions-and-restrictions).
 
 In order to customize the claims emitted in tokens, you have to create a **claim mapping policy** and assign it to the desired application. Learn [how to create and assign a claim mapping policy](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-assignment).
 
@@ -76,7 +76,7 @@ Open the project **WebApp_SAML** in your IDE (like Visual Studio) to configure t
 
 ### Test the application
 
-Clean and build the solution, then run the **WebApp_SAML** application and sign-in using an on-premise user (who already got synced) or a user from your Azure AD tenant only.
+Clean and build the solution, then run the **WebApp_SAML** application and sign-in using an on-premise user (who already got synced) or a user from your Microsoft Entra tenant only.
 
 All the claims configured on the **User Attributes and Claims** steps will be listed in the page, in case the signed-in user has a value set for it.
 
@@ -92,10 +92,10 @@ We're always listening, and if you want to get in touch with you directly, send 
 
 ## Next Step
 
-- [Using on-prem Active Directory security groups in an Azure AD application](../2-2-Security-Groups/README.md)
+- [Using on-prem Active Directory security groups in an Microsoft Entra application](../2-2-Security-Groups/README.md)
 
 ### Useful resources
 
-- [Moving application authentication from AD FS to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
-- [AD FS to Azure AD App Migration Tool](https://github.com/AzureAD/Deployment-Plans/blob/master/ADFS%20to%20AzureAD%20App%20Migration/Readme.md)
+- [Moving application authentication from AD FS to Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
+- [AD FS to Microsoft Entra app Migration Tool](https://github.com/AzureAD/Deployment-Plans/blob/master/ADFS%20to%20AzureAD%20App%20Migration/Readme.md)
 - [Configure SAML-based single sign-on to non-gallery applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)

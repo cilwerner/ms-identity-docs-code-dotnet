@@ -7,7 +7,7 @@ languages:
   - csharp
 products:
  - aspnet-core
- - azure-active-directory
+ - entra-id
  - microsoft-identity-web
  - microsoft-graph-api
 name: Sharing the MSAL token cache between a web app and a background console worker app
@@ -51,13 +51,13 @@ From your shell or command line:
 cd "1-Integrated-Cache\1-1-WebApp-BgWorker"
 ```
 
-### Step 2: Register the Web App project with your Azure AD tenant
+### Step 2: Register the Web App project with your Microsoft Entra tenant
 
 There is two projects in this sample, although you will only use one app registration. To register it, you can:
 
 - follow the steps below for manually register your apps
 - or use PowerShell scripts that:
-  - **automatically** creates the Azure AD applications and related objects (passwords, permissions, dependencies) for you.
+  - **automatically** creates the Microsoft Entra applications and related objects (passwords, permissions, dependencies) for you.
   - modify the projects' configuration files.
 
 <details>
@@ -72,7 +72,7 @@ There is two projects in this sample, although you will only use one app registr
    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
    ```
 
-    1. Run the script to create your Azure AD application and configure the code of the sample application accordingly.
+    1. Run the script to create your Microsoft Entra application and configure the code of the sample application accordingly.
     1. For interactive process -in PowerShell, run:
 
    ```PowerShell
@@ -86,16 +86,16 @@ There is two projects in this sample, although you will only use one app registr
 
 Follow the steps below to manually walk through the steps to register and configure the applications in the Azure portal.
 
-### Choose the Azure AD tenant where you want to create your applications
+### Choose the Microsoft Entra tenant where you want to create your applications
 
 As a first step you'll need to:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. If your account is present in more than one Azure AD tenant, select your profile at the top right corner in the menu on top of the page, and then **switch directory** to change your portal session to the desired Azure AD tenant.
+1. If your account is present in more than one Microsoft Entra tenant, select your profile at the top right corner in the menu on top of the page, and then **switch directory** to change your portal session to the desired Microsoft Entra tenant.
 
 #### Register the webApp app (WebApp-SharedTokenCache)
 
-1. Navigate to the [Azure portal](https://portal.azure.com) and select the **Azure AD** service.
+1. Navigate to the [Azure portal](https://portal.azure.com) and select the **Microsoft Entra** service.
 1. Select the **App Registrations** blade on the left, then select **New registration**.
 1. In the **Register an application page** that appears, enter your application's registration information:
    - In the **Name** section, enter a meaningful application name that will be displayed to users of the app, for example `WebApp-SharedTokenCache`.
@@ -130,7 +130,7 @@ Open the project in your IDE (like Visual Studio or Visual Studio Code) to confi
 1. Open the `appsettings.json` file for the `WebApp`.
 2. Find the app key `ClientId` and replace the existing value with the application ID (clientId) of the `WebApp-SharedTokenCache` copied from the Azure portal.
 3. Find the app key `TenantId` and replace the value with the Tenant ID where you registered your application.
-4. Find the app key `Domain` and replace the existing value with your Azure AD tenant name.
+4. Find the app key `Domain` and replace the existing value with your Microsoft Entra tenant name.
 5. Find the app key `ClientSecret` and replace the existing value with the key you saved during the creation of the `WebApp-SharedTokenCache`, in the Azure portal.
 6. Find the section `ConnectionStrings` and replace the value of the keys that are relevant to your scenario:
    - If you will use **SQL Server**, update the key `TokenCacheDbConnStr` with the database connection string.
@@ -142,9 +142,9 @@ Open the project in your IDE (like Visual Studio or Visual Studio Code) to confi
    "BaseUrl": "https://graph.microsoft.com/v1.0"
   ```
 
-### Step 3: Register the Background Worker project with your Azure AD tenant
+### Step 3: Register the Background Worker project with your Microsoft Entra tenant
 
-In order to have the Web App and the Background Worker sharing the same token cache, **they must share the same application ID (clientId)** for Azure AD as well. So for this step, you will set additional configuration to the existing `WebApp-SharedTokenCache` app registration.
+In order to have the Web App and the Background Worker sharing the same token cache, **they must share the same application ID (clientId)** for Microsoft Entra as well. So for this step, you will set additional configuration to the existing `WebApp-SharedTokenCache` app registration.
 
 1. Navigate to your `WebApp-SharedTokenCache` [App registration](https://go.microsoft.com/fwlink/?linkid=2083908) page.
 2. In the app's registration screen, click on the **Authentication** blade in the left.
@@ -161,7 +161,7 @@ Open the project in your IDE (like Visual Studio) to configure the code.
 1. Open the `appsettings.json` file for the `BackgroundWorker`.
 2. Find the app key `ClientId` and replace the existing value with the application ID (clientId) of the `WebApp-SharedTokenCache` copied from the Azure portal.
 3. Find the app key `TenantId` and replace the value with the Tenant ID where you registered your application.
-4. Find the app key `Domain` and replace the existing value with your Azure AD tenant name.
+4. Find the app key `Domain` and replace the existing value with your Microsoft Entra tenant name.
 5. Find the app key `ClientSecret` and replace the existing value with the key you saved during the creation of the `WebApp-SharedTokenCache`, in the Azure portal.
 6. Find the section for the `ConnectionStrings` and replace the value of the keys that are relevant to your scenario:
    - If you will use **SQL Server**, update the key `TokenCacheDbConnStr` with the database connection string.

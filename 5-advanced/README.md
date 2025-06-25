@@ -6,7 +6,7 @@ products:
 - dotnet
 - aspnet-core
 - azure
-- azure-active-directory
+- entra-id
 - azure-cache-redis
 - ms-graph
 description: "An ASP.Net Core sample that shows how background apps and services can access the MSAL token cache and continue to act on-behalf of users in their absence."
@@ -36,8 +36,8 @@ Today, most background processes that need to work with user's data without them
 ## Prerequisites
 
 - Either [Visual Studio](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/download) and [.NET Core SDK](https://www.microsoft.com/net/learn/get-started)
-- An **Azure AD** tenant. For more information, see: [How to get an Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
-- A user account in your **Azure AD** tenant. This sample will not work with a **personal Microsoft account**.  If you're signed in to the [Azure portal](https://portal.azure.com) with a personal Microsoft account and have not created a user account in your directory before, you will need to create one before proceeding.
+- An **Microsoft Entra** tenant. For more information, see: [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- A user account in your **Microsoft Entra** tenant. This sample will not work with a **personal Microsoft account**.  If you're signed in to the [Azure portal](https://portal.azure.com) with a personal Microsoft account and have not created a user account in your directory before, you will need to create one before proceeding.
 
 ## Setup
 

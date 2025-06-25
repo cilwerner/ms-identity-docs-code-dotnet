@@ -1,23 +1,23 @@
-# Using on-prem AD Security Groups in Applications registered in an Azure Active Directory tenant
+# Using on-prem AD Security Groups in Applications registered in an Microsoft Entra tenant
 
 ## Scenario
 
-You have an AD FS application that uses on-prem Active Directory security groups, and you want that applications on your Azure AD tenant can also work with the same groups.
+You have an AD FS application that uses on-prem Active Directory security groups, and you want that applications on your Microsoft Entra tenant can also work with the same groups.
 
 ### About the sample
 
-This documentation guides you how to configure an Azure AD application to include the security groups from an on-prem Active Directory.
+This documentation guides you how to configure an Microsoft Entra application to include the security groups from an on-prem Active Directory.
 
 ### Prerequisites
 
-- An Azure Active Directory (Azure AD) tenant. For more information on how to get an Azure AD tenant, see [How to get an Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
-- [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis) configured on a domain-joined machine
+- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- [Microsoft Entra Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis) configured on a domain-joined machine
 
 ## Migrate Security Groups
 
-Users and groups will get synced to your Azure AD tenant using the Azure AD Connect tool out of the box, as long as they are presented in the **Synced OU** folder on the on-prem Active Directory.
+Users and groups will get synced to your Microsoft Entra tenant using the Microsoft Entra Connect tool out of the box, as long as they are presented in the **Synced OU** folder on the on-prem Active Directory.
 
-If you haven't configured the Azure AD Connect tool to sync security groups yet, refer to the [chapter 1-2](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad/tree/master/1-ADFS-Host/1-2-Setup-AzureADConnect) once.
+If you haven't configured the Microsoft Entra Connect tool to sync security groups yet, refer to the [chapter 1-2](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad/tree/master/1-ADFS-Host/1-2-Setup-AzureADConnect) once.
 
 ### Include Security Group as Claims in your application
 
@@ -33,7 +33,7 @@ If you haven't configured the Azure AD Connect tool to sync security groups yet,
 
 ### Test group claims in the application
 
-Clean and build the solution. Run the Azure AD integrated `WebApp_SAML` project, sign-in with a valid user, and the user's groups will be listed in the claims:
+Clean and build the solution. Run the Microsoft Entra integrated `WebApp_SAML` project, sign-in with a valid user, and the user's groups will be listed in the claims:
 
 For each group that the user belongs to, a claim for it  will be displayed with the chosen **Source attribute** as its value.
 
@@ -59,7 +59,7 @@ If you would like to configure dynamic groups, [follow this tutorial](https://do
 
 ### Useful resources
 
-- [Moving application authentication from AD FS to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
+- [Moving application authentication from AD FS to Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
 - [Configure SAML-based single sign-on to non-gallery applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)
-- [Synchronizing Directory Extensions to Azure AD](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions)
+- [Synchronizing Directory Extensions to Microsoft Entra](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions)
 - [Using Directory Extensions in Dynamic groups](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions#use-the-attributes-in-dynamic-groups)

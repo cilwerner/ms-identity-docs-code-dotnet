@@ -8,7 +8,7 @@ name: .NET console application that accesses a protected API
 description: This a .NET console application that accesses a protected API. The code in this sample is used by one or more articles on docs.microsoft.com.
 products:
 - azure
-- azure-active-directory
+- entra-id
 - ms-graph
 urlFragment: ms-identity-docs-code-dotnet-console
 ---

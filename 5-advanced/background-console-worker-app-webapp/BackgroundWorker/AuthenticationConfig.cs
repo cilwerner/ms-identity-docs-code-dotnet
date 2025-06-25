@@ -9,19 +9,19 @@ namespace BackgroundWorker
     public class AuthenticationConfig
     {
         /// <summary>
-        /// instance of Azure AD, for example public Azure or a Sovereign cloud (Azure China, Germany, US government, etc ...)
+        /// instance of Microsoft Entra, for example public Azure or a Sovereign cloud (Azure China, Germany, US government, etc ...)
         /// </summary>
         public string Instance { get; set; } = "https://login.microsoftonline.com/{0}";
 
         /// The Tenant is:
-        /// - either the tenant ID of the Azure AD tenant in which this application is registered (a guid)
+        /// - either the tenant ID of the Microsoft Entra tenant in which this application is registered (a guid)
         /// or a domain name associated with the tenant
         /// - or 'organizations' (for a multi-tenant application)
         /// </summary>
         public string TenantId { get; set; }
 
         /// <summary>
-        /// Guid used by the application to uniquely identify itself to Azure AD
+        /// Guid used by the application to uniquely identify itself to Microsoft Entra
         /// </summary>
         public string ClientId { get; set; }
 

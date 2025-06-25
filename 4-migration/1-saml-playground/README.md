@@ -7,7 +7,7 @@ In this chapter, we'd integrate the provided .NET MVC web application to an AD F
 ### About the sample
 
 Here we use the provided ASP.NET web application that uses the [SAML](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) protocol to authenticate users.
-We'd first register this web app with an AD FS instance and then later move on to register (migrate) this application to the Azure AD tenant that's connected (synced) to the on-prem Active Directory domain of this AD FS instance.
+We'd first register this web app with an AD FS instance and then later move on to register (migrate) this application to the Microsoft Entra tenant that's connected (synced) to the on-prem Active Directory domain of this AD FS instance.
 
 ### Prerequisites
 
@@ -16,7 +16,7 @@ We'd first register this web app with an AD FS instance and then later move on t
 - [Visual Studio](https://aka.ms/vsdownload)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework)
 - A SSL certificate to use during registering the app (Relying Party) on AD FS.
-- An Azure Active Directory (Azure AD) tenant. For more information on how to get an Azure AD tenant, see [How to get an Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
 
 ## Configuring the sample on an AD FS server
 
@@ -83,10 +83,10 @@ We're always listening, and if you want to get in touch with you directly, send 
 
 ## Next chapter
 
-In the next chapter, we'd cover [Azure AD Connect sync configuration for migration scenarios](../1-2-Setup-AzureADConnect/README.md)
+In the next chapter, we'd cover [Microsoft Entra Connect sync configuration for migration scenarios](../1-2-Setup-AzureADConnect/README.md)
 
 ### Useful resources
 
-- [Moving application authentication from AD FS to Azure Active Directory](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
-- [AD FS to Azure AD App Migration Tool](https://github.com/AzureAD/Deployment-Plans/blob/master/ADFS%20to%20AzureAD%20App%20Migration/Readme.md)
+- [Moving application authentication from AD FS to Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
+- [AD FS to Microsoft Entra app Migration Tool](https://github.com/AzureAD/Deployment-Plans/blob/master/ADFS%20to%20AzureAD%20App%20Migration/Readme.md)
 - [Configure SAML-based single sign-on to non-gallery applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)

@@ -8,8 +8,8 @@ param(
 )
 
 <#
- This script creates the Azure AD applications needed for this sample and updates the configuration files
- for the visual Studio projects from the data in the Azure AD applications.
+ This script creates the Microsoft Entra applications needed for this sample and updates the configuration files
+ for the visual Studio projects from the data in the Microsoft Entra applications.
 
  Before running this script you need to install the AzureAD cmdlets as an administrator. 
  For this:
@@ -118,7 +118,7 @@ $ErrorActionPreference = "Stop"
 Function ConfigureApplications
 {
 <#.Description
-   This function creates the Azure AD applications for the sample in the provided Azure AD tenant and updates the
+   This function creates the Microsoft Entra applications for the sample in the provided Microsoft Entra tenant and updates the
    configuration files in the client and service project  of the visual studio solution (App.Config and Web.Config)
    so that they are consistent with the Applications parameters
 #> 
@@ -130,7 +130,7 @@ Function ConfigureApplications
     }
 
     # $tenantId is the Active Directory Tenant. This is a GUID which represents the "Directory ID" of the AzureAD tenant
-    # into which you want to create the apps. Look it up in the Azure portal in the "Properties" of the Azure AD.
+    # into which you want to create the apps. Look it up in the Azure portal in the "Properties" of Microsoft Entra.
 
     # Login to Azure PowerShell (interactive if credentials are not already provided:
     # you'll need to sign-in with creds enabling your to create apps in the tenant)

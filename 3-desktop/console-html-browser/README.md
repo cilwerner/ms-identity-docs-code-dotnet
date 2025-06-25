@@ -19,8 +19,6 @@ description: "This sample demonstrates a .NET Desktop (Console) application call
 
 # Using the Microsoft identity platform to call Microsoft Graph API with custom web UI HTML.
 
-![Build badge](https://identitydivision.visualstudio.com/_apis/public/build/definitions/a7934fdd-dcde-4492-a406-7fad6ac00e17/<BuildNumber>/badge)
-
 ## About this sample
 
 ### Overview

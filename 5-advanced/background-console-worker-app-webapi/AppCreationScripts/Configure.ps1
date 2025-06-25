@@ -8,8 +8,8 @@ param(
 )
 
 <#
- This script creates the Azure AD applications needed for this sample and updates the configuration files
- for the visual Studio projects from the data in the Azure AD applications.
+ This script creates the Microsoft Entra applications needed for this sample and updates the configuration files
+ for the visual Studio projects from the data in the Microsoft Entra applications.
 
  In case you don't have Microsoft.Graph.Applications already installed, the script will automatically install it for the current user
  
@@ -150,7 +150,7 @@ Function ReplaceInTextFile([string] $configFilePath, [System.Collections.HashTab
     Set-Content -Path $configFilePath -Value $lines -Force
 }
 <#.Description
-   This function creates a new Azure AD scope (OAuth2Permission) with default and provided values
+   This function creates a new Microsoft Entra scope (OAuth2Permission) with default and provided values
 #>  
 Function CreateScope( [string] $value, [string] $userConsentDisplayName, [string] $userConsentDescription, [string] $adminConsentDisplayName, [string] $adminConsentDescription)
 {
@@ -167,7 +167,7 @@ Function CreateScope( [string] $value, [string] $userConsentDisplayName, [string
 }
 
 <#.Description
-   This function creates a new Azure AD AppRole with default and provided values
+   This function creates a new Microsoft Entra appRole with default and provided values
 #>  
 Function CreateAppRole([string] $types, [string] $name, [string] $description)
 {
@@ -188,7 +188,7 @@ Function CreateAppRole([string] $types, [string] $name, [string] $description)
 Function CreateOptionalClaim([string] $name)
 {
     <#.Description
-    This function creates a new Azure AD optional claims  with default and provided values
+    This function creates a new Microsoft Entra optional claims  with default and provided values
     #>  
 
     $appClaim = New-Object Microsoft.Graph.PowerShell.Models.MicrosoftGraphOptionalClaim
@@ -204,7 +204,7 @@ Function ConfigureApplications
     $isOpenSSl = 'N' #temporary disable open certificate creation 
 
     <#.Description
-       This function creates the Azure AD applications for the sample in the provided Azure AD tenant and updates the
+       This function creates the Microsoft Entra applications for the sample in the provided Microsoft Entra tenant and updates the
        configuration files in the client and service project  of the visual studio solution (App.Config and Web.Config)
        so that they are consistent with the Applications parameters
     #> 
@@ -424,7 +424,7 @@ Function ConfigureApplications
     Write-Host "IMPORTANT: Please follow the instructions below to complete a few manual step(s) in the Azure portal":
     Write-Host "- For service"
     Write-Host "  - Navigate to $servicePortalUrl"
-    Write-Host "  - Please follow through the manual steps outlined in 'Step 3: Register the Background Worker project with your Azure AD tenant' of the README.MD" -ForegroundColor Red 
+    Write-Host "  - Please follow through the manual steps outlined in 'Step 3: Register the Background Worker project with your Microsoft Entra tenant' of the README.MD" -ForegroundColor Red 
     Write-Host -ForegroundColor Green "------------------------------------------------------------------------------------------------" 
        if($isOpenSSL -eq 'Y')
     {

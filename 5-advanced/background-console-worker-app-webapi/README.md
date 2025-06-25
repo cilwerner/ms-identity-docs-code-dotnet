@@ -8,7 +8,7 @@ languages:
   - javascript
 products:
  - aspnet-core
- - azure-active-directory
+ - entra-id
   - microsoft-identity-web
   - microsoft-graph-api
 urlFragment: ms-identity-dotnet-advanced-token-cache
@@ -38,7 +38,7 @@ This sample shows how a Web API thats is called from a web app thats signs-in us
 
 ## Scenario
 
-In this sample a .NET Core Web Api protected by [Azure AD](https://azure.microsoft.com/services/active-directory/), calls the [Microsoft Graph API](https://developer.microsoft.com/graph) on behalf-of users using the [on-behalf-of flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow).
+In this sample a .NET Core Web Api protected by [Microsoft Entra](https://azure.microsoft.com/services/active-directory/), calls the [Microsoft Graph API](https://developer.microsoft.com/graph) on behalf-of users using the [on-behalf-of flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow).
 
 It uses the [MSAL.NET](http://aka.ms/msal-net) and [Microsoft.Identity.Web](https://aka.ms/microsoft-identity-web) libraries to sign-in users, acquire an [access token](https://aka.ms/access-tokens) for [Microsoft Graph](https://graph.microsoft.com) and calls the [Microsoft Graph](https://docs.microsoft.com/graph/overview) `/me` endpoint. The [Microsoft.Identity.Web](https://aka.ms/microsoft-identity-web) library is configured to cache the users tokens in a [Sql Server](https://github.com/AzureAD/microsoft-identity-web/wiki/token-cache-serialization) instance.
 
@@ -55,8 +55,8 @@ Additionally, since the console app uses cached tokens with delegated permission
 ### Prerequisites
 
 * Either [Visual Studio](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/download) and [.NET Core SDK](https://www.microsoft.com/net/learn/get-started)
-* An **Azure AD** tenant. For more information, see: [How to get an Azure AD tenant](https://docs.microsoft.com/azure/active-directory/develop/test-setup-environment#get-a-test-tenant)
-* A user account in your **Azure AD** tenant. This sample will not work with a **personal Microsoft account**. If you're signed in to the [Azure portal](https://portal.azure.com) with a personal Microsoft account and have not created a user account in your directory before, you will need to create one before proceeding.
+* An **Microsoft Entra** tenant. For more information, see: [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/test-setup-environment#get-a-test-tenant)
+* A user account in your **Microsoft Entra** tenant. This sample will not work with a **personal Microsoft account**. If you're signed in to the [Azure portal](https://portal.azure.com) with a personal Microsoft account and have not created a user account in your directory before, you will need to create one before proceeding.
 
 - If you want to store the token cache on a **SQL Server database**, you can easily generate the token cache table by installing the following tool using the **Developer Command Prompt for Visual Studio** (running as an administrator):
 
@@ -82,11 +82,11 @@ cd "1-Integrated-Cache\1-2-WebAPI-BgWorker"
 
 ### Step 3: Register the sample application(s) in your tenant
 
-There are two projects in this sample. Each needs to be separately registered in your Azure AD tenant. To register these projects, you can:
+There are two projects in this sample. Each needs to be separately registered in your Microsoft Entra tenant. To register these projects, you can:
 
 - follow the steps below for manually register your apps
 - or use PowerShell scripts that:
-  - **automatically** creates the Azure AD applications and related objects (passwords, permissions, dependencies) for you.
+  - **automatically** creates the Microsoft Entra applications and related objects (passwords, permissions, dependencies) for you.
   - modify the projects' configuration files.
 
   <details>
@@ -101,7 +101,7 @@ There are two projects in this sample. Each needs to be separately registered in
        Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process -Force
        ```
 
-    1. Run the script to create your Azure AD application and configure the code of the sample application accordingly.
+    1. Run the script to create your Microsoft Entra application and configure the code of the sample application accordingly.
     1. For interactive process -in PowerShell, run:
 
        ```PowerShell
@@ -113,16 +113,16 @@ There are two projects in this sample. Each needs to be separately registered in
 
   </details>
 
-#### Choose the Azure AD tenant where you want to create your applications
+#### Choose the Microsoft Entra tenant where you want to create your applications
 
 To manually register the apps, as a first step you'll need to:
 
 1. Sign in to the [Azure portal](https://portal.azure.com).
-1. If your account is present in more than one Azure AD tenant, select your profile at the top right corner in the menu on top of the page, and then **switch directory** to change your portal session to the desired Azure AD tenant.
+1. If your account is present in more than one Microsoft Entra tenant, select your profile at the top right corner in the menu on top of the page, and then **switch directory** to change your portal session to the desired Microsoft Entra tenant.
 
 #### Register the service app (WebApi-SharedTokenCache)
 
-1. Navigate to the [Azure portal](https://portal.azure.com) and select the **Azure Active Directory** service.
+1. Navigate to the [Azure portal](https://portal.azure.com) and select the **Microsoft Entra ID** service.
 1. Select the **App Registrations** blade on the left, then select **New registration**.
 1. In the **Register an application page** that appears, enter your application's registration information:
     1. In the **Name** section, enter a meaningful application name that will be displayed to users of the app, for example `WebApi-SharedTokenCache`.
@@ -180,14 +180,14 @@ Open the project in your IDE (like Visual Studio or Visual Studio Code) to confi
 > In the steps below, "ClientID" is the same as "Application ID" or "AppId".
 
 1. Open the `WebAPI\appsettings.json` file.
-1. Find the key `Domain` and replace the existing value with your Azure AD tenant name.
-1. Find the key `TenantId` and replace the existing value with your Azure AD tenant ID.
+1. Find the key `Domain` and replace the existing value with your Microsoft Entra tenant name.
+1. Find the key `TenantId` and replace the existing value with your Microsoft Entra tenant ID.
 1. Find the key `ClientId` and replace the existing value with the application ID (clientId) of `WebApi-SharedTokenCache` app copied from the Azure portal.
 1. Find the key `ClientSecret` and replace the existing value with the key you saved during the creation of `WebApi-SharedTokenCache` copied from the Azure portal.
 
 #### Register the client app (ProfileSPA-SharedTokenCache)
 
-1. Navigate to the [Azure portal](https://portal.azure.com) and select the **Azure Active Directory** service.
+1. Navigate to the [Azure portal](https://portal.azure.com) and select the **Microsoft Entra ID** service.
 1. Select the **App Registrations** blade on the left, then select **New registration**.
 1. In the **Register an application page** that appears, enter your application's registration information:
     1. In the **Name** section, enter a meaningful application name that will be displayed to users of the app, for example `ProfileSPA-SharedTokenCache`.
@@ -231,7 +231,7 @@ Open the project in your IDE (like Visual Studio or Visual Studio Code) to confi
 
 #### Configure Known Client Applications for service (WebApi-SharedTokenCache)
 
-For a middle-tier web API (`WebApi-SharedTokenCache`) to be able to call a downstream web API, the middle tier app needs to be granted the required permissions as well. However, since the middle-tier cannot interact with the signed-in user, it needs to be explicitly bound to the client app in its **Azure AD** registration. This binding merges the permissions required by both the client and the middle-tier web API and presents it to the end user in a single consent dialog. The user then consent to this combined set of permissions. To achieve this, you need to add the **Application Id** of the client app to the `knownClientApplications` property in the **manifest** of the web API. Here's how:
+For a middle-tier web API (`WebApi-SharedTokenCache`) to be able to call a downstream web API, the middle tier app needs to be granted the required permissions as well. However, since the middle-tier cannot interact with the signed-in user, it needs to be explicitly bound to the client app in its **Microsoft Entra** registration. This binding merges the permissions required by both the client and the middle-tier web API and presents it to the end user in a single consent dialog. The user then consent to this combined set of permissions. To achieve this, you need to add the **Application Id** of the client app to the `knownClientApplications` property in the **manifest** of the web API. Here's how:
 
 1. In the [Azure portal](https://portal.azure.com), navigate to your `WebApi-SharedTokenCache` app registration, and select the **Manifest** blade.
 1. In the manifest editor, change the `knownClientApplications: []` line so that the array contains the Client ID of the client application (`ProfileSPA-SharedTokenCache`) as an element of the array.
@@ -244,9 +244,9 @@ For instance:
 
 1. **Save** the changes to the manifest.
 
-## Step 3: Register the Background Worker project with your Azure AD tenant
+## Step 3: Register the Background Worker project with your Microsoft Entra tenant
 
-In order to have the Web App and the Background Worker sharing the same token cache, **they must share the same application ID (clientId)** on Azure AD as well. So for this step, you will set additional configuration to the existing `WebApi-SharedTokenCache` app registration.
+In order to have the Web App and the Background Worker sharing the same token cache, **they must share the same application ID (clientId)** on Microsoft Entra as well. So for this step, you will set additional configuration to the existing `WebApi-SharedTokenCache` app registration.
 
 1. Navigate to your `WebApi-SharedTokenCache` [App registration](https://go.microsoft.com/fwlink/?linkid=2083908) page.
 2. In the app's registration screen, click on the **Authentication** blade in the left.
@@ -263,7 +263,7 @@ Open the project in your IDE (like Visual Studio) to configure the code.
 1. Open the `appsettings.json` file for the `BackgroundWorker`.
 2. Find the app key `ClientId` and replace the existing value with the application ID (clientId) of the `WebApi-SharedTokenCache` copied from the Azure portal.
 3. Find the app key `TenantId` and replace the value with the Tenant ID where you registered your application.
-4. Find the app key `Domain` and replace the existing value with your Azure AD tenant name.
+4. Find the app key `Domain` and replace the existing value with your Microsoft Entra tenant name.
 5. Find the app key `ClientSecret` and replace the existing value with the key you saved during the creation of the `WebApi-SharedTokenCache`, in the Azure portal.
 6. Find the section for the `ConnectionStrings` and replace the value of the keys that are relevant to your scenario:
    - If you will use **SQL Server**, update the key `TokenCacheDbConnStr` with the database connection string.

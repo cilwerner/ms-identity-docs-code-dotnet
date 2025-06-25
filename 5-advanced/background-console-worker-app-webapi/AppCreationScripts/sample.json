@@ -31,7 +31,7 @@
       ],
       "ManualSteps": [
         {
-          "Comment": "Please follow through the manual steps outlined in 'Step 3: Register the Background Worker project with your Azure AD tenant' of the README.MD"
+          "Comment": "Please follow through the manual steps outlined in 'Step 3: Register the Background Worker project with your Microsoft Entra tenant' of the README.MD"
         }
       ]
     },

@@ -8,7 +8,7 @@ This repository provides a comprehensive set of end-to-end samples demonstrating
 
 The samples are grouped into five main categories, each corresponding to a common application scenario:
 
-│ ├── 1-server-side/ # Web APIs, Daemon apps, Blazor Server, ASP.NET Core ├── 2-client-side/ # SPA apps (Angular, React, Vue, Blazor WASM) ├── 3-desktop/ # WinForms, WPF, WinUI, Console ├── 4-migration/ # Migration guides (e.g., ADFS to Azure AD) ├── 5-advanced/ # Advanced scenarios (e.g., distributed token cache) └── README.md
+│ ├── 1-server-side/ # Web APIs, Daemon apps, Blazor Server, ASP.NET Core ├── 2-client-side/ # SPA apps (Angular, React, Vue, Blazor WASM) ├── 3-desktop/ # WinForms, WPF, WinUI, Console ├── 4-migration/ # Migration guides (e.g., ADFS to Microsoft Entra) ├── 5-advanced/ # Advanced scenarios (e.g., distributed token cache) └── README.md
 
 Each scenario folder contains one or more samples, each with its own README and instructions.
 
@@ -21,7 +21,7 @@ Each scenario folder contains one or more samples, each with its own README and 
 | **1-server-side**  | Server-side web apps and APIs using ASP.NET Core, Blazor Server, and daemon/background apps. |
 | **2-client-side**  | Single-page applications (SPA) using Blazor WASM, Angular, React, or Vue.                    |
 | **3-desktop**      | Desktop applications using WinForms, WPF, WinUI, or Console.                                 |
-| **4-migration**    | Migration playbooks and samples (e.g., ADFS to Azure AD).                                    |
+| **4-migration**    | Migration playbooks and samples (e.g., ADFS to Microsoft Entra).                                    |
 | **5-advanced**     | Advanced scenarios such as distributed token cache, multi-tenant, and custom policies.        |
 
 ---
@@ -48,7 +48,7 @@ All samples are built with the latest supported .NET versions and Microsoft.Iden
 
 - **Configuration** is managed via `appsettings.json` and environment variables.
 - **Secrets and credentials** should never be committed to source control. Use [Azure Key Vault](https://learn.microsoft.com/azure/key-vault/general/basic-concepts) or environment variables for sensitive data.
-- **PowerShell scripts** are provided where helpful for Azure AD app registration.
+- **PowerShell scripts** are provided where helpful for Microsoft Entra app registration.
 
 ---
 

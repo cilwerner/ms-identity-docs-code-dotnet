@@ -1,7 +1,7 @@
 {
   "name": "ms-identity-react-c3s1",
   "version": "0.1.0",
-  "description": "A React single-page application using MSAL React to call a protected web API on Azure Active Directory",
+  "description": "A React single-page application using MSAL React to call a protected web API on Microsoft Entra ID",
   "dependencies": {
     "@azure/msal-browser": "^2.25.0",
     "@azure/msal-react": "^1.4.1",
