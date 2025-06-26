@@ -6,7 +6,7 @@ In this chapter, we'd integrate the provided .NET MVC web application to an AD F
 
 ### About the sample
 
-Here we use the provided ASP.NET web application that uses the [SAML](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) protocol to authenticate users.
+Here we use the provided ASP.NET web application that uses the [SAML](https://learn.microsoft.com/entra/identity-platform/single-sign-on-saml-protocol) protocol to authenticate users.
 We'd first register this web app with an AD FS instance and then later move on to register (migrate) this application to the Microsoft Entra tenant that's connected (synced) to the on-prem Active Directory domain of this AD FS instance.
 
 ### Prerequisites
@@ -16,7 +16,7 @@ We'd first register this web app with an AD FS instance and then later move on t
 - [Visual Studio](https://aka.ms/vsdownload)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework)
 - A SSL certificate to use during registering the app (Relying Party) on AD FS.
-- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 
 ## Configuring the sample on an AD FS server
 

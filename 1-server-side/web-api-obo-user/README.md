@@ -19,7 +19,7 @@ urlFragment: ms-identity-docs-code-obo-user-csharp
 ![Build passing.](https://img.shields.io/badge/build-passing-brightgreen.svg) ![Code coverage.](https://img.shields.io/badge/coverage-100%25-brightgreen.svg) ![License.](https://img.shields.io/badge/license-MIT-green.svg)
 -->
 
-This ASP.NET Core minimal web API uses the Microsoft identity platform to protect an endpoint (require authorized access), and also accesses Microsoft Graph on behalf of the user. The API uses [ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity?view=aspnetcore-8.0) interacting with the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview) to protect its endpoint.
+This ASP.NET Core minimal web API uses the Microsoft identity platform to protect an endpoint (require authorized access), and also accesses Microsoft Graph on behalf of the user. The API uses [ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity?view=aspnetcore-8.0) interacting with the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/entra/identity-platform/msal-overview) to protect its endpoint.
 
 ```console
 $ curl https://localhost:5001/api/me -H "Authorization: Bearer {valid-access-token}"
@@ -49,7 +49,7 @@ $ curl https://localhost:5001/api/me -H "Authorization: Bearer {valid-access-tok
 
 ### 1. Register the web API application in Microsoft Entra ID
 
-First, complete the steps in [Configure an application to expose a web API](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to register the sample API and expose a scope.
+First, complete the steps in [Configure an application to expose a web API](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app) to register the sample API and expose a scope.
 
 Use the following settings for your app registration:
 
@@ -68,7 +68,7 @@ Use the following settings for your app registration:
 
 ### 2. Register a client application in Microsoft Entra ID
 
-Second, complete the steps in [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to register the client sample app.
+Second, complete the steps in [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app) to register the client sample app.
 
 Use the following settings for your app registration:
 
@@ -166,7 +166,7 @@ If you can't get the sample working, you've checked [Stack Overflow](http://stac
 
 > :warning: WARNING: Any issue _not_ limited to running this or another sample app will be closed without being addressed.
 
-For all other requests, see [Support and help options for developers | Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/developer-support-help-options).
+For all other requests, see [Support and help options for developers | Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/developer-support-help-options).
 
 ## Contributing
 

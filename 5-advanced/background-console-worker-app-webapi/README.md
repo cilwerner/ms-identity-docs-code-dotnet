@@ -17,8 +17,6 @@ description: An ASP.Net Core sample that shows how web APIs can share the token 
 
 # Share the MSAL token cache between a web API and a background console worker app
 
-[![Build status](https://identitydivision.visualstudio.com/IDDP/_apis/build/status/AAD%20Samples/.NET%20client%20samples/ASP.NET%20Core%20Web%20App%20tutorial)](https://identitydivision.visualstudio.com/IDDP/_build/latest?definitionId=XXX)
-
 * [Overview](#overview)
 * [Scenario](#scenario)
 * [Contents](#contents)
@@ -38,7 +36,7 @@ This sample shows how a Web API thats is called from a web app thats signs-in us
 
 ## Scenario
 
-In this sample a .NET Core Web Api protected by [Microsoft Entra](https://azure.microsoft.com/services/active-directory/), calls the [Microsoft Graph API](https://developer.microsoft.com/graph) on behalf-of users using the [on-behalf-of flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow).
+In this sample a .NET Core Web Api protected by [Microsoft Entra](https://azure.microsoft.com/services/active-directory/), calls the [Microsoft Graph API](https://developer.microsoft.com/graph) on behalf-of users using the [on-behalf-of flow](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
 
 It uses the [MSAL.NET](http://aka.ms/msal-net) and [Microsoft.Identity.Web](https://aka.ms/microsoft-identity-web) libraries to sign-in users, acquire an [access token](https://aka.ms/access-tokens) for [Microsoft Graph](https://graph.microsoft.com) and calls the [Microsoft Graph](https://docs.microsoft.com/graph/overview) `/me` endpoint. The [Microsoft.Identity.Web](https://aka.ms/microsoft-identity-web) library is configured to cache the users tokens in a [Sql Server](https://github.com/AzureAD/microsoft-identity-web/wiki/token-cache-serialization) instance.
 
@@ -46,7 +44,7 @@ Another .NET Core console application, which in real world would constitute a ba
 
 This token sharing allows this console application, which doesn't interact or sign-in users itself, to be able to accomplish its objective of working on behalf of the users who signed-in earlier in the Web App.
 
-Additionally, since the console app uses cached tokens with delegated permissions only, it doesn't need to use a flow like [Client Credentials](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) which will necessitate it requesting high-privilege [Application Permissions](https://docs.microsoft.com/graph/auth/auth-concepts#microsoft-graph-permissions) which often require an [admin consent](https://docs.microsoft.com/azure/active-directory/develop/v2-admin-consent).
+Additionally, since the console app uses cached tokens with delegated permissions only, it doesn't need to use a flow like [Client Credentials](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-client-creds-grant-flow) which will necessitate it requesting high-privilege [Application Permissions](https://docs.microsoft.com/graph/auth/auth-concepts#microsoft-graph-permissions) which often require an [admin consent](https://learn.microsoft.com/entra/identity-platform/v2-admin-consent).
 
 ![Diagram](ReadmeFiles/diagram.png)
 
@@ -55,7 +53,7 @@ Additionally, since the console app uses cached tokens with delegated permission
 ### Prerequisites
 
 * Either [Visual Studio](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/download) and [.NET Core SDK](https://www.microsoft.com/net/learn/get-started)
-* An **Microsoft Entra** tenant. For more information, see: [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/test-setup-environment#get-a-test-tenant)
+* An **Microsoft Entra** tenant. For more information, see: [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/test-setup-environment#get-a-test-tenant)
 * A user account in your **Microsoft Entra** tenant. This sample will not work with a **personal Microsoft account**. If you're signed in to the [Azure portal](https://portal.azure.com) with a personal Microsoft account and have not created a user account in your directory before, you will need to create one before proceeding.
 
 - If you want to store the token cache on a **SQL Server database**, you can easily generate the token cache table by installing the following tool using the **Developer Command Prompt for Visual Studio** (running as an administrator):
@@ -142,13 +140,13 @@ To manually register the apps, as a first step you'll need to:
       * Since this app signs-in users, we will now proceed to select **delegated permissions**, which is is requested by apps when signing-in users.
            1. In the **Delegated permissions** section, select the **User.Read** in the list. Use the search box if necessary.
    1. Select the **Add permissions** button at the bottom.
-1. In the app's registration screen, select the **Expose an API** blade to the left to open the page where you can publish the permission as an API for which client applications can obtain [access tokens](https://aka.ms/access-tokens) for. The first thing that we need to do is to declare the unique [resource](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow) URI that the clients will be using to obtain access tokens for this API. To declare an resource URI(Application ID URI), follow the following steps:
+1. In the app's registration screen, select the **Expose an API** blade to the left to open the page where you can publish the permission as an API for which client applications can obtain [access tokens](https://aka.ms/access-tokens) for. The first thing that we need to do is to declare the unique [resource](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-auth-code-flow) URI that the clients will be using to obtain access tokens for this API. To declare an resource URI(Application ID URI), follow the following steps:
     1. Select **Set** next to the **Application ID URI** to generate a URI that is unique for this app.
-    1. For this sample, accept the proposed Application ID URI (`api://{clientId}`) by selecting **Save**. Read more about Application ID URI at [Validation differences by supported account types \(signInAudience\)](https://docs.microsoft.com/azure/active-directory/develop/supported-accounts-validation).
+    1. For this sample, accept the proposed Application ID URI (`api://{clientId}`) by selecting **Save**. Read more about Application ID URI at [Validation differences by supported account types \(signInAudience\)](https://learn.microsoft.com/entra/identity-platform/supported-accounts-validation).
  
 ##### Publish Delegated Permissions
 
-1. All APIs must publish a minimum of one [scope](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code), also called [Delegated Permission](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#permission-types), for the client apps to obtain an access token for a *user* successfully. To publish a scope, follow these steps:
+1. All APIs must publish a minimum of one [scope](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-auth-code-flow#request-an-authorization-code), also called [Delegated Permission](https://learn.microsoft.com/entra/identity-platform/v2-permissions-and-consent#permission-types), for the client apps to obtain an access token for a *user* successfully. To publish a scope, follow these steps:
 1. Select **Add a scope** button open the **Add a scope** screen and Enter the values as indicated below:
     1. For **Scope name**, use `Profile.Read`.
     1. Select **Admins and users** options for **Who can consent?**.
@@ -163,7 +161,7 @@ To manually register the apps, as a first step you'll need to:
     1. Set `accessTokenAcceptedVersion` property to **2**.
     1. Select on **Save**.
 
-    > :information_source:  Follow  [the principle of least privilege](https://docs.microsoft.com/azure/active-directory/develop/secure-least-privileged-access) whenever you are publishing permissions for a web API.
+    > :information_source:  Follow  [the principle of least privilege](https://learn.microsoft.com/entra/identity-platform/secure-least-privileged-access) whenever you are publishing permissions for a web API.
 
 ##### Configure Optional Claims
 
@@ -227,7 +225,7 @@ Open the project in your IDE (like Visual Studio or Visual Studio Code) to confi
 1. Find the app key `clientId` and replace the existing value with the application ID (clientId) of the `ProfileSPA-SharedTokenCache` application copied from the Azure portal.
 1. Find the app key `authority` and replace the existing value with ('https://login.microsoftonline.com/'+ $tenantId).
 1. Find the app key `protectedResources.endpoint` and replace the existing value with the base address of the WebApi-SharedTokenCache project (by default `https://localhost:44351/api/profile`).
-2. Find the app key `protectedResources.scopes` and replace the existing value with the `/.default` scope: `api://{client_id}/.default`. [Learn more about the /.default scope](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope)
+2. Find the app key `protectedResources.scopes` and replace the existing value with the `/.default` scope: `api://{client_id}/.default`. [Learn more about the /.default scope](https://learn.microsoft.com/entra/identity-platform/v2-permissions-and-consent#the-default-scope)
 
 #### Configure Known Client Applications for service (WebApi-SharedTokenCache)
 

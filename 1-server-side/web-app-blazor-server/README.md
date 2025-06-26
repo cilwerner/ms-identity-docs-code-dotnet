@@ -33,7 +33,7 @@ This ASP.NET Core Blazor Server application application authenticates a user and
 
 ### 1. Register the app
 
-First, complete the steps in [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to register the application.
+First, complete the steps in [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app) to register the application.
 
 Use these settings in your app registration.
 
@@ -85,7 +85,7 @@ In _appsettings.json_, update each variable with values from the app registratio
 
 This ASP.NET Core 6 Blazor Server application is created using the .NET Blazor Server App template. The app is adding sign-in to protect itself, and as a consequence this is requiring the user to be authenticated in Microsoft Entra ID.
 
-When this .NET Blazor Server starts and before listening for any HTTP requests, it bootstraps the application using a single-surface API provided as part of **Microsoft.Identity.Web** and **Microsoft.Idenitty.Web.UI**. The former is tying ASP.NET Core, its authentication middleware for sign-in, and the [Microsoft Authentication Library (MSAL) for .NET](https://github.com/azuread/microsoft-authentication-library-for-dotnet), while the latter adds UI components and controllers to facilitate user sign-in, sign-out, and other account experiences. All the details required for authentication are being gathered from a configuration section named `AzureAd` as well as others entries used during the call to a protected API, like the scopes. As for authorization, it is using the default policy options. Additionally, special services are injected [specifically for Blazor for re-signing, consent and Conditional Access purposes](https://github.com/AzureAD/microsoft-identity-web/wiki/Managing-incremental-consent-and-conditional-access#in-blazor-server). The recommended pattern to acquire tokens is first attempting to acquire them [non-interactevelly (or silent from cache), and then interactively](https://docs.microsoft.com/azure/active-directory/develop/msal-authentication-flows#interactive-and-non-interactive-authentication). Therefore, it is required to store the tokens for them to be cached. In this tutorial tokens are being stored in memory.
+When this .NET Blazor Server starts and before listening for any HTTP requests, it bootstraps the application using a single-surface API provided as part of **Microsoft.Identity.Web** and **Microsoft.Idenitty.Web.UI**. The former is tying ASP.NET Core, its authentication middleware for sign-in, and the [Microsoft Authentication Library (MSAL) for .NET](https://github.com/azuread/microsoft-authentication-library-for-dotnet), while the latter adds UI components and controllers to facilitate user sign-in, sign-out, and other account experiences. All the details required for authentication are being gathered from a configuration section named `AzureAd` as well as others entries used during the call to a protected API, like the scopes. As for authorization, it is using the default policy options. Additionally, special services are injected [specifically for Blazor for re-signing, consent and Conditional Access purposes](https://github.com/AzureAD/microsoft-identity-web/wiki/Managing-incremental-consent-and-conditional-access#in-blazor-server). The recommended pattern to acquire tokens is first attempting to acquire them [non-interactevelly (or silent from cache), and then interactively](https://learn.microsoft.com/entra/identity-platform/msal-authentication-flows#interactive-and-non-interactive-authentication). Therefore, it is required to store the tokens for them to be cached. In this tutorial tokens are being stored in memory.
 
 When users navigate to the home page, the application initiates an authentication flow, more specifically an **Authorization code type flow (OAuth 2 authorization code grant)**. During this authentication flow, the user is prompted for their credentials, by Microsoft Entra ID, if the token has to be acquired interactively, and then asked to consent to the permissions. Upon successful authentication, this web app is making a call to the Microsoft Graph /me endpoint from the **Index** page by using an injected **IDownstreamWebApi** service. This helper facilitates making an HTTP GET request to the protected web API adding the cached or newly acquired user's access token in the HTTP Authorization header. The app displays that you've successfully logged in using your Microsoft Entra credentials, and the Microsoft Graph API response.
 
@@ -104,7 +104,7 @@ If you can't get the sample working, you've checked [Stack Overflow](https://sta
 
 > :warning: WARNING: Any issue in this repository _not_ limited to running one of its sample apps will be closed without being addressed.
 
-For all other requests, see [Support and help options for developers | Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/developer-support-help-options).
+For all other requests, see [Support and help options for developers | Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/developer-support-help-options).
 
 ## Contributing
 

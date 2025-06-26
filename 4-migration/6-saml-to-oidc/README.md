@@ -5,23 +5,23 @@
 
 You have a web application using SAML protocol on Microsoft Entra and you would like to migrate it to use OpenID Connect protocol.
 
-Here we migrate the provided ASP.NET web application that uses the [SAML](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) protocol to authenticate users and registered in your Microsoft Entra tenant to the [OAuth 2.0 and OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols). The web application project can be found in [chapter 1-1](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad/tree/master/1-ADFS-Host/1-1-Setup-SAML-Playground/README.md).
+Here we migrate the provided ASP.NET web application that uses the [SAML](https://learn.microsoft.com/entra/identity-platform/single-sign-on-saml-protocol) protocol to authenticate users and registered in your Microsoft Entra tenant to the [OAuth 2.0 and OpenID Connect protocol](https://learn.microsoft.com/entra/identity-platform/active-directory-v2-protocols). The web application project can be found in [chapter 1-1](https://github.com/Azure-Samples/ms-identity-dotnet-adfs-to-aad/tree/master/1-ADFS-Host/1-1-Setup-SAML-Playground/README.md).
 
 This sample uses the `Microsoft.Owin.Security.WsFederation` library for authenticating users using SAML, which we will change to use the `Microsoft.Owin.Security.OpenIdConnect` library instead.
 
-Application developers might consider this to enable their applications to be able to work with [OAuth 2.0](https://docs.microsoft.com/azure/active-directory/develop/v2-app-types) based Web APIs like [Microsoft Graph](https://docs.microsoft.com/graph/overview) and [Azure REST API](https://docs.microsoft.com/rest/api/azure/).
+Application developers might consider this to enable their applications to be able to work with [OAuth 2.0](https://learn.microsoft.com/entra/identity-platform/v2-app-types) based Web APIs like [Microsoft Graph](https://docs.microsoft.com/graph/overview) and [Azure REST API](https://docs.microsoft.com/rest/api/azure/).
 
 ### Prerequisites
 
 - [Visual Studio](https://aka.ms/vsdownload)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework)
-- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 
 ## Migrate from SAML to OpenID Connect
 
-Azure Microsoft Entra supports application using both [SAML protocol](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) and [OAuth 2.0 and OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols) for authentication.
+Azure Microsoft Entra supports application using both [SAML protocol](https://learn.microsoft.com/entra/identity-platform/single-sign-on-saml-protocol) and [OAuth 2.0 and OpenID Connect protocol](https://learn.microsoft.com/entra/identity-platform/active-directory-v2-protocols) for authentication.
 
-If you have a application using SAML registered on Microsoft Entra today, you can use the same application registration to enable authentication using [OAuth 2.0 and OpenID Connect protocol](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols), thus requiring minimal code changes.
+If you have a application using SAML registered on Microsoft Entra today, you can use the same application registration to enable authentication using [OAuth 2.0 and OpenID Connect protocol](https://learn.microsoft.com/entra/identity-platform/active-directory-v2-protocols), thus requiring minimal code changes.
 
 ### Application changes in Microsoft Entra ID
 
@@ -43,7 +43,7 @@ First, sign in to the [Azure portal](https://portal.azure.com) and:
 1. Search and select the application where you want to include Security Groups. For instance, `WebApp_SAML`.
 1. Navigate to **Token configuration** on the left blade.
 1. If there isn't a configuration for groups yet, select **Add groups claim**, otherwise edit the existing configuration.
-1. The following blade is divided by the sections **ID**, **Access** and **SAML**. Each section correspond to the groups claim configuration for the **Id Token**, **Access Token** and **SAML** claims issued by the application respectively. For each section that you would like to include group claims, select the group property that the claim should return. [Learn more details about group claim](https://docs.microsoft.com/azure/active-directory/develop/active-directory-optional-claims#configuring-groups-optional-claims).
+1. The following blade is divided by the sections **ID**, **Access** and **SAML**. Each section correspond to the groups claim configuration for the **Id Token**, **Access Token** and **SAML** claims issued by the application respectively. For each section that you would like to include group claims, select the group property that the claim should return. [Learn more details about group claim](https://learn.microsoft.com/entra/identity-platform/active-directory-optional-claims#configuring-groups-optional-claims).
 1. Select **Save**.
 
 ### Code Changes

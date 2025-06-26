@@ -45,7 +45,7 @@ To sign in, use a web browser to open the page https://microsoft.com/devicelogin
 
 ### 1. Register the app
 
-First, complete the steps in [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to register the application.
+First, complete the steps in [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app) to register the application.
 
 Use these settings in your app registration.
 
@@ -97,7 +97,7 @@ Follow the device code flow instructions that are presented. If everything worke
 
 This .NET 6 (C#) console application prompts the user to sign in via their device using a code provided by Microsoft Authentication Library (MSAL). The user completes this flow in their chosen web browser. Upon successful authentication, an HTTP GET request to the Microsoft Graph /me endpoint is issued with the user's access token in the HTTP header. The response from the GET request is then displayed in the console.
 
-This sample does not demonstrate the usage of cached access tokens. Access token caching should be used in situations where the console application will need to access the same protected API using the same access token multiple times across the life of the user's session in the application. This sample, as written, does not perform multiple calls and wouldn't result in a token cache hit. For additional information, see [Get a token from the token cache using MSAL.NET](https://docs.microsoft.com/azure/active-directory/develop/msal-net-acquire-token-silently).
+This sample does not demonstrate the usage of cached access tokens. Access token caching should be used in situations where the console application will need to access the same protected API using the same access token multiple times across the life of the user's session in the application. This sample, as written, does not perform multiple calls and wouldn't result in a token cache hit. For additional information, see [Get a token from the token cache using MSAL.NET](https://learn.microsoft.com/entra/identity-platform/msal-net-acquire-token-silently).
 
 ## Reporting problems
 
@@ -112,7 +112,7 @@ If you can't get the sample working, you've checked [Stack Overflow](http://stac
 
 > :warning: WARNING: Any issue in this repository _not_ limited to running one of its sample apps will be closed without being addressed.
 
-For all other requests, see [Support and help options for developers | Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/developer-support-help-options).
+For all other requests, see [Support and help options for developers | Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/developer-support-help-options).
 
 ## Contributing
 

@@ -32,7 +32,7 @@ The standalone app in this scenario is created using the ASP.NET Core 8.0 Blazor
 
 ### 1. Register the web API application in your Microsoft Entra ID
 
-First, complete the steps in [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to register the sample app.
+First, complete the steps in [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app) to register the sample app.
 
 Use the following settings for your app registration:
 

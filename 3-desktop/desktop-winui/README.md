@@ -32,7 +32,7 @@ This .NET WinUI 3 Packaged Desktop App authenticates a user and then makes a req
 
 ### 1. Register the app
 
-First, complete the steps in [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to register the application.
+First, complete the steps in [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app) to register the application.
 
 Use these settings in your app registration.
 
@@ -87,7 +87,7 @@ If you can't get the sample working, you've checked [Stack Overflow](https://sta
 
 > :warning: WARNING: Any issue in this repository _not_ limited to running one of its sample apps will be closed without being addressed.
 
-For all other requests, see [Support and help options for developers | Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/developer-support-help-options).
+For all other requests, see [Support and help options for developers | Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/developer-support-help-options).
 
 ## Contributing
 

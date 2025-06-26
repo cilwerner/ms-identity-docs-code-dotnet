@@ -23,7 +23,7 @@ The [MSAL.NET](http://aka.ms/msal-net) and the [Microsoft.Identity.Web](https://
 
 This tutorial explains how by sharing the same app registration in [Azure Portal](https://portal.azure.com/) (sharing the same client Id), background processes and services can still continue to work on behalf of the user after the user has exited the frontend web app.
 
-Today, most background processes that need to work with user's data without them being present to authenticate or re-authenticate make use of [Application Permissions](https://docs.microsoft.com/graph/auth/auth-concepts#microsoft-graph-permissions) which often require an [admin consent](https://docs.microsoft.com/azure/active-directory/develop/v2-admin-consent). This requires an elevation of privilege and is often an unnecessary hassle as the developer originally did not intend to obtain a permission over what a user consents to their app.
+Today, most background processes that need to work with user's data without them being present to authenticate or re-authenticate make use of [Application Permissions](https://docs.microsoft.com/graph/auth/auth-concepts#microsoft-graph-permissions) which often require an [admin consent](https://learn.microsoft.com/entra/identity-platform/v2-admin-consent). This requires an elevation of privilege and is often an unnecessary hassle as the developer originally did not intend to obtain a permission over what a user consents to their app.
 
 ## Contents
 
@@ -36,7 +36,7 @@ Today, most background processes that need to work with user's data without them
 ## Prerequisites
 
 - Either [Visual Studio](https://visualstudio.microsoft.com/downloads/) or [Visual Studio Code](https://code.visualstudio.com/download) and [.NET Core SDK](https://www.microsoft.com/net/learn/get-started)
-- An **Microsoft Entra** tenant. For more information, see: [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- An **Microsoft Entra** tenant. For more information, see: [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 - A user account in your **Microsoft Entra** tenant. This sample will not work with a **personal Microsoft account**.  If you're signed in to the [Azure portal](https://portal.azure.com) with a personal Microsoft account and have not created a user account in your directory before, you will need to create one before proceeding.
 
 ## Setup

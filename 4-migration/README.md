@@ -21,15 +21,15 @@ The folders in this repo are arranged as *chapters*, each with a README and samp
 
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework)
 - [AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/ad-fs-overview) environment
-- [Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- [Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 
 ## Migration steps
 
 By following the tutorial chapters in this code sample, you progress through the following scenarios:
 
-- We start by integrating the provided sample web application with an AD FS instance. This web app uses the [SAML](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) protocol for it authentication setup. 
+- We start by integrating the provided sample web application with an AD FS instance. This web app uses the [SAML](https://learn.microsoft.com/entra/identity-platform/single-sign-on-saml-protocol) protocol for it authentication setup. 
 - Next, we'd migrate this application to an Microsoft Entra tenant.
-- Finally, we also provide instructions as how to change the authentication protocol from SAML to [OAuth 2.0 and OpenID Connect](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols). This change allows you to reap the benefits of accessing rich APIs like [Microsoft Graph](https://docs.microsoft.com/graph/overview) and the [Azure REST API](https://docs.microsoft.com/rest/api/azure/) amongst others.
+- Finally, we also provide instructions as how to change the authentication protocol from SAML to [OAuth 2.0 and OpenID Connect](https://learn.microsoft.com/entra/identity-platform/active-directory-v2-protocols). This change allows you to reap the benefits of accessing rich APIs like [Microsoft Graph](https://docs.microsoft.com/graph/overview) and the [Azure REST API](https://docs.microsoft.com/rest/api/azure/) amongst others.
 
 We have also covered the following topics in some detail as they might play a big part in your app migration work:
 
@@ -53,7 +53,7 @@ We have also covered the following topics in some detail as they might play a bi
 |--------------------------------------------------|-------------------------------|
 | [2.1 Integrate app with Microsoft Entra](2-AAD-Migration/2-1-SAML-WebApp/README.md)| Migrating the SAML ASP.NET MVC web app from AD FS to Microsoft Entra.|
 | [2.2 Using Security groups](2-AAD-Migration/2-2-Security-Groups/README.md) | Using on-premise Active Directory security groups in applications migrated to an Microsoft Entra tenant. |
-| [2.3 Convert from SAML to OIDC](2-AAD-Migration/2-3-From-SAML-to-OIDC/README.md) | Migrate a SAML ASP.NET application to use [OAuth 2.0 and OpenID Connect](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols).|
+| [2.3 Convert from SAML to OIDC](2-AAD-Migration/2-3-From-SAML-to-OIDC/README.md) | Migrate a SAML ASP.NET application to use [OAuth 2.0 and OpenID Connect](https://learn.microsoft.com/entra/identity-platform/active-directory-v2-protocols).|
 
 For information about Integrated Windows Authentication (IWA), see [Azure-Samples/active-directory-dotnet-iwa-v2](https://github.com/Azure-Samples/active-directory-dotnet-iwa-v2).
 

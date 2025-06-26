@@ -31,7 +31,7 @@ Another .NET Core console application, which in real world would constitute a ba
 
 This token sharing allows this console application, which doesn't interact or sign-in users itself, to be able to accomplish its objective of working on behalf of the users who signed-in earlier in the Web App.
 
-Additionally, since the console app uses cached tokens with delegated permissions only, it doesn't need to use a flow like [Client Credentials](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) which will necessitate it requesting high-privilege [Application Permissions](https://docs.microsoft.com/graph/auth/auth-concepts#microsoft-graph-permissions) which often require an [admin consent](https://docs.microsoft.com/azure/active-directory/develop/v2-admin-consent).
+Additionally, since the console app uses cached tokens with delegated permissions only, it doesn't need to use a flow like [Client Credentials](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-client-creds-grant-flow) which will necessitate it requesting high-privilege [Application Permissions](https://docs.microsoft.com/graph/auth/auth-concepts#microsoft-graph-permissions) which often require an [admin consent](https://learn.microsoft.com/entra/identity-platform/v2-admin-consent).
 
 ![Diagram](ReadmeFiles/diagram.png)
 
@@ -192,7 +192,7 @@ With all the accounts retrieved, the background worker will print those that got
 
 ## Next steps: Add a Web API in this mix and extend the cache sharing.
 
-In the next tutorial, we will enhance this sample to add a Web API to the mix. This web API uses the [on-behalf of](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow) to call Microsoft Graph on the signed-in user's behalf. 
+In the next tutorial, we will enhance this sample to add a Web API to the mix. This web API uses the [on-behalf of](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-on-behalf-of-flow) to call Microsoft Graph on the signed-in user's behalf. 
 
 See [Share the MSAL token cache between a web app , its web API and a background console worker app](../1-2-WebAPI-BgWorker/README.md)
 

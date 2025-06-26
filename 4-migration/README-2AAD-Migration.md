@@ -12,5 +12,5 @@ The following chapters are available:
 - [AD FS to Microsoft Entra app Migration Tool](https://github.com/AzureAD/Deployment-Plans/blob/master/ADFS%20to%20AzureAD%20App%20Migration/Readme.md)
 - [Configure SAML-based single sign-on to non-gallery applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)
 - [synchronizing Directory Extensions to Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions).
-- [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 - [Download and install Microsoft Entra Connect](https://www.microsoft.com/download/details.aspx?id=47594)

@@ -59,7 +59,7 @@ $ curl https://localhost:5001/api/application
 
 ### 1. Register the app
 
-First, complete the steps in [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to register the web API.
+First, complete the steps in [Quickstart: Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app) to register the web API.
 
 Use these settings in your app registration.
 
@@ -74,7 +74,7 @@ Use these settings in your app registration.
 
 ### 2. Configure the web API
 
-Open the _~/msal-client-credentials-flow/appsettings.json_ file in your code editor and modify the following values values with those from your [app's registration in the Microsoft Entra admin center](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app#register-an-application):
+Open the _~/msal-client-credentials-flow/appsettings.json_ file in your code editor and modify the following values values with those from your [app's registration in the Microsoft Entra admin center](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app#register-an-application):
 
    ```json
    "ClientId": "Enter_the_Application_Id_here",
@@ -155,7 +155,7 @@ If you can't get the sample working, you've checked [Stack Overflow](http://stac
 
 > :warning: WARNING: Any issue in this repository _not_ limited to running one of its sample apps will be closed without being addressed.
 
-For all other requests, see [Support and help options for developers | Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/developer-support-help-options).
+For all other requests, see [Support and help options for developers | Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/developer-support-help-options).
 
 ## Contributing
 

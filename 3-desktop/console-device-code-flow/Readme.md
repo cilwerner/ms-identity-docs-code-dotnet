@@ -24,9 +24,9 @@ description: "This sample demonstrates a .NET Desktop (Console) application auth
 
 ### Overview
 
-This sample demonstrates a .NET Desktop (Console) application  authenticating a user with the [device code flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-device-code) and calling Microsoft Graph on behalf of the user. This flow allows users to sign in to input-constrained devices such as a smart TV, IoT device, or printer. To enable this flow, the device has the user visit a webpage in their browser on another device to sign in. Once the user signs in, the device is able to get access tokens and refresh tokens as needed.
+This sample demonstrates a .NET Desktop (Console) application  authenticating a user with the [device code flow](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-device-code) and calling Microsoft Graph on behalf of the user. This flow allows users to sign in to input-constrained devices such as a smart TV, IoT device, or printer. To enable this flow, the device has the user visit a webpage in their browser on another device to sign in. Once the user signs in, the device is able to get access tokens and refresh tokens as needed.
 
-1. The .NET Desktop (Console) application uses the [Microsoft Authentication Library (MSAL)](https://docs.microsoft.com/azure/active-directory/develop/msal-overview) to sign-in a user and obtains an [access token](https://docs.microsoft.com/azure/active-directory/develop/access-tokens) for Microsoft Graph from Microsoft Entra ID. The user is  using the [device code flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-device-code).
+1. The .NET Desktop (Console) application uses the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/entra/identity-platform/msal-overview) to sign-in a user and obtains an [access token](https://learn.microsoft.com/entra/identity-platform/access-tokens) for Microsoft Graph from Microsoft Entra ID. The user is  using the [device code flow](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-device-code).
 2. The access token is used as a bearer token to authenticate the user when calling Microsoft Graph.
 
 > Looking for previous versions of this code sample? Check out the tags on the [releases](../../releases) GitHub page.
@@ -241,14 +241,14 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 For more information, see MSAL.NET's conceptual documentation:
 
 - [MSAL.NET's conceptual documentation](https://aka.ms/msal-net)
-- [Device code flow](https://docs.microsoft.com/azure/active-directory/develop/v2-oauth2-device-code)
-- [Microsoft identity platform (Microsoft Entra ID for developers)](https://docs.microsoft.com/azure/active-directory/develop/)
-- [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-- [Quickstart: Configure a client application to access web APIs](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
-- [Understanding Microsoft Entra application consent experiences](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience)
-- [Understand user and admin consent](https://docs.microsoft.com/azure/active-directory/develop/howto-convert-app-to-be-multi-tenant#understand-user-and-admin-consent)
-- [Application and service principal objects in Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/develop/app-objects-and-service-principals)
+- [Device code flow](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-device-code)
+- [Microsoft identity platform (Microsoft Entra ID for developers)](https://learn.microsoft.com/entra/identity-platform/)
+- [Quickstart: Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app)
+- [Quickstart: Configure a client application to access web APIs](https://learn.microsoft.com/entra/identity-platform/quickstart-configure-app-access-web-apis)
+- [Understanding Microsoft Entra application consent experiences](https://learn.microsoft.com/entra/identity-platform/application-consent-experience)
+- [Understand user and admin consent](https://learn.microsoft.com/entra/identity-platform/howto-convert-app-to-be-multi-tenant#understand-user-and-admin-consent)
+- [Application and service principal objects in Microsoft Entra ID](https://learn.microsoft.com/entra/identity-platform/app-objects-and-service-principals)
 - [Acquiring Tokens](https://aka.ms/msal-net-acquiring-tokens)
-- [National Clouds](https://docs.microsoft.com/azure/active-directory/develop/authentication-national-cloud#app-registration-endpoints)
+- [National Clouds](https://learn.microsoft.com/entra/identity-platform/authentication-national-cloud#app-registration-endpoints)
 
 For more information about how OAuth 2.0 protocols work in this scenario and other scenarios, see [Authentication Scenarios for Microsoft Entra ID](http://go.microsoft.com/fwlink/?LinkId=394414).

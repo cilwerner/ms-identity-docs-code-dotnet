@@ -2,7 +2,7 @@
 
 ## Scenario
 
-Here we migrate the provided ASP.NET web application that uses the [SAML](https://docs.microsoft.com/azure/active-directory/develop/single-sign-on-saml-protocol) protocol to authenticate users and integrated with AD FS, to your Microsoft Entra tenant.
+Here we migrate the provided ASP.NET web application that uses the [SAML](https://learn.microsoft.com/entra/identity-platform/single-sign-on-saml-protocol) protocol to authenticate users and integrated with AD FS, to your Microsoft Entra tenant.
 
 ## About the sample
 
@@ -15,7 +15,7 @@ After the migration, this sample will use the `App Federation Metadata Url` from
 - [Visual Studio](https://aka.ms/vsdownload)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework)
 - An AD FS environment
-- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 
 ## Migrate the SAML application from ADFSto Microsoft Entra ID
 
@@ -61,9 +61,9 @@ The web application registered on [chapter 1](https://github.com/Azure-Samples/m
 
 ### Customize Claims Emitted in Tokens
 
-In Microsoft Entra, it is possible to customize claims emitted in tokens for specific applications. Check the [permitted values that can be emitted](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#table-3-valid-id-values-per-source) and [SAML exceptions and restrictions](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#exceptions-and-restrictions).
+In Microsoft Entra, it is possible to customize claims emitted in tokens for specific applications. Check the [permitted values that can be emitted](https://learn.microsoft.com/entra/identity-platform/active-directory-claims-mapping#table-3-valid-id-values-per-source) and [SAML exceptions and restrictions](https://learn.microsoft.com/entra/identity-platform/active-directory-claims-mapping#exceptions-and-restrictions).
 
-In order to customize the claims emitted in tokens, you have to create a **claim mapping policy** and assign it to the desired application. Learn [how to create and assign a claim mapping policy](https://docs.microsoft.com/azure/active-directory/develop/active-directory-claims-mapping#claims-mapping-policy-assignment).
+In order to customize the claims emitted in tokens, you have to create a **claim mapping policy** and assign it to the desired application. Learn [how to create and assign a claim mapping policy](https://learn.microsoft.com/entra/identity-platform/active-directory-claims-mapping#claims-mapping-policy-assignment).
 
 ## Configure the .NET MVC project (WebApp_SAML) to use your app registration
 

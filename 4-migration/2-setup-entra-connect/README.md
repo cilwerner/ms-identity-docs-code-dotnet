@@ -13,7 +13,7 @@ If it is already installed, skip to [Post-Installation steps](#post-installation
 ### Prerequisites
 
 - An on-premise Active Directory environment
-- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://docs.microsoft.com/azure/active-directory/develop/quickstart-create-new-tenant)
+- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 - A tenant admin account in Microsoft Entra ID
 
 The [Microsoft Entra Connect tool](https://www.microsoft.com/download/details.aspx?id=47594) will guide you through the initial steps on how to synchronize an AD FS environment with an Microsoft Entra tenant.

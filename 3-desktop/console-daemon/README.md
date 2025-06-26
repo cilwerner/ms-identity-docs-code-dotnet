@@ -46,7 +46,7 @@ Could not find a cached token, so fetching a new one.
 
 ### 1. Register the app with the Microsoft identity platform
 
-First, complete the steps in [Register an application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-register-app) to register the application.
+First, complete the steps in [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app) to register the application.
 
 Use these settings in your app registration.
 

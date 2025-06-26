@@ -39,7 +39,7 @@ Hello, world. You were able to access this because you provided a valid access t
 
 ### 1. Register the app
 
-First, complete the steps in [Register an API application with the Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/quickstart-configure-app-expose-web-apis#register-the-web-api) to register the sample app.
+First, complete the steps in [Register an API application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/quickstart-configure-app-expose-web-apis#register-the-web-api) to register the sample app.
 
 Use these settings in your app registration.
 
@@ -116,7 +116,7 @@ If you can't get the sample working, you've checked [Stack Overflow](https://sta
 
 > :warning: WARNING: Any issue in this repository _not_ limited to running one of its sample apps will be closed without being addressed.
 
-For all other requests, see [Support and help options for developers | Microsoft identity platform](https://docs.microsoft.com/azure/active-directory/develop/developer-support-help-options).
+For all other requests, see [Support and help options for developers | Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/developer-support-help-options).
 
 ## Contributing
 

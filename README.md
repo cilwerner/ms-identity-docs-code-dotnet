@@ -62,7 +62,7 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting new s
 ## 📢 Support & Feedback
 
 - For questions, open an [issue](https://github.com/your-org/ms-identity-docs-code-dotnet/issues).
-- For Microsoft identity platform documentation, visit [docs.microsoft.com/azure/active-directory/develop](https://docs.microsoft.com/azure/active-directory/develop).
+- For Microsoft identity platform documentation, visit [learn.microsoft.com/entra/identity-platform](https://learn.microsoft.com/entra/identity-platform).
 
 ---
 

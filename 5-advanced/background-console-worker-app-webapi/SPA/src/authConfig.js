@@ -26,7 +26,7 @@ export const msalConfig = {
         loggerOptions: {
             /**
              * Below you can configure MSAL.js logs. For more information, visit:
-             * https://docs.microsoft.com/azure/active-directory/develop/msal-logging-js
+             * https://learn.microsoft.com/entra/identity-platform/msal-logging-js
              */
             loggerCallback: (level, message, containsPii) => {
                 if (containsPii) {
