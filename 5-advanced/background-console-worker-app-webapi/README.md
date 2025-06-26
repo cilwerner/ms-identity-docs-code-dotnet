@@ -38,13 +38,13 @@ This sample shows how a Web API thats is called from a web app thats signs-in us
 
 In this sample a .NET Core Web Api protected by [Microsoft Entra](https://azure.microsoft.com/services/active-directory/), calls the [Microsoft Graph API](https://developer.microsoft.com/graph) on behalf-of users using the [on-behalf-of flow](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-on-behalf-of-flow).
 
-It uses the [MSAL.NET](http://aka.ms/msal-net) and [Microsoft.Identity.Web](https://aka.ms/microsoft-identity-web) libraries to sign-in users, acquire an [access token](https://aka.ms/access-tokens) for [Microsoft Graph](https://graph.microsoft.com) and calls the [Microsoft Graph](https://docs.microsoft.com/graph/overview) `/me` endpoint. The [Microsoft.Identity.Web](https://aka.ms/microsoft-identity-web) library is configured to cache the users tokens in a [Sql Server](https://github.com/AzureAD/microsoft-identity-web/wiki/token-cache-serialization) instance.
+It uses the [MSAL.NET](http://aka.ms/msal-net) and [Microsoft.Identity.Web](https://aka.ms/microsoft-identity-web) libraries to sign-in users, acquire an [access token](https://aka.ms/access-tokens) for [Microsoft Graph](https://graph.microsoft.com) and calls the [Microsoft Graph](https://learn.microsoft.com/graph/overview) `/me` endpoint. The [Microsoft.Identity.Web](https://aka.ms/microsoft-identity-web) library is configured to cache the users tokens in a [Sql Server](https://github.com/AzureAD/microsoft-identity-web/wiki/token-cache-serialization) instance.
 
-Another .NET Core console application, which in real world would constitute a background worker for the front-end web app or a Web API, shares the app ID (ClientId) of the Web App and the Web API and thus is able to acquire the access tokens cached earlier by the Web App for [Microsoft Graph](https://docs.microsoft.com/graph/overview) using the MSAL library.
+Another .NET Core console application, which in real world would constitute a background worker for the front-end web app or a Web API, shares the app ID (ClientId) of the Web App and the Web API and thus is able to acquire the access tokens cached earlier by the Web App for [Microsoft Graph](https://learn.microsoft.com/graph/overview) using the MSAL library.
 
 This token sharing allows this console application, which doesn't interact or sign-in users itself, to be able to accomplish its objective of working on behalf of the users who signed-in earlier in the Web App.
 
-Additionally, since the console app uses cached tokens with delegated permissions only, it doesn't need to use a flow like [Client Credentials](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-client-creds-grant-flow) which will necessitate it requesting high-privilege [Application Permissions](https://docs.microsoft.com/graph/auth/auth-concepts#microsoft-graph-permissions) which often require an [admin consent](https://learn.microsoft.com/entra/identity-platform/v2-admin-consent).
+Additionally, since the console app uses cached tokens with delegated permissions only, it doesn't need to use a flow like [Client Credentials](https://learn.microsoft.com/entra/identity-platform/v2-oauth2-client-creds-grant-flow) which will necessitate it requesting high-privilege [Application Permissions](https://learn.microsoft.com/graph/auth/auth-concepts#microsoft-graph-permissions) which often require an [admin consent](https://learn.microsoft.com/entra/identity-platform/v2-admin-consent).
 
 ![Diagram](ReadmeFiles/diagram.png)
 
@@ -390,4 +390,4 @@ services.AddScoped<IIntegratedTokenCacheStore, IntegratedSqlServerTokenCacheStor
 
 - Learn about [Microsoft.Identity.Web](https://github.com/AzureAD/microsoft-identity-web/wiki)
 - Learn how to enable distributed caches in [token cache serialization](https://github.com/AzureAD/microsoft-identity-web/wiki/token-cache-serialization)
-- [Use HttpClientFactory to implement resilient HTTP requests](https://docs.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests) used by the Graph custom service
+- [Use HttpClientFactory to implement resilient HTTP requests](https://learn.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests) used by the Graph custom service

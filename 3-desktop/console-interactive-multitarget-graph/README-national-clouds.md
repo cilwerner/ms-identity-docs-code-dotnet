@@ -44,7 +44,7 @@ Note that enabling your application for National clouds requires you to:
 - use a specific authority, depending on the cloud in the config file for your application
 - in case you want to call the graph, this requires a specific Graph endpoint URL, depending on the cloud.
 
-More details in [Authentication in National Clouds](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-national-cloud)
+More details in [Authentication in National Clouds](https://learn.microsoft.com/en-us/entra/identity-platform/authentication-national-cloud)
 
 ## How to run this sample
 
@@ -57,10 +57,10 @@ To use the PowerShell script that **automatically** creates the Microsoft Entra 
 Open the project in your IDE (like Visual Studio) to configure the code.
 
 1. Open the `Console-Interactive-MultiTarget\appsettings.json` file
-1. Find the app key `Instance` and replace the existing value with the [correspondent endpoint for your National clouds](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-national-cloud#azure-ad-authentication-endpoints). 
+1. Find the app key `Instance` and replace the existing value with the [correspondent endpoint for your National clouds](https://learn.microsoft.com/en-us/entra/identity-platform/authentication-national-cloud#azure-ad-authentication-endpoints). 
 1. Find the app key `ClientId` and replace the existing value with the application ID (clientId) of the `Console-Interactive-MultiTarget-v2` application copied from the Microsoft Entra admin center.
 1. Find the app key `TenantId` and replace the existing value with your Microsoft Entra tenant ID.
-1. Find the app key `GraphApiUrl` and replace the existing value with the Microsoft Graph endpoint for your National clouds. [See this reference for more info on which graph endpoint to use](https://docs.microsoft.com/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
+1. Find the app key `GraphApiUrl` and replace the existing value with the Microsoft Graph endpoint for your National clouds. [See this reference for more info on which graph endpoint to use](https://learn.microsoft.com/graph/deployments#microsoft-graph-and-graph-explorer-service-root-endpoints).
 
 ## Community Help and Support
 

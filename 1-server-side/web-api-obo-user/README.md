@@ -1,11 +1,11 @@
 ---
-# Metadata required by https://docs.microsoft.com/samples/browse/
-# Metadata properties: https://review.docs.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
+# Metadata required by https://learn.microsoft.com/samples/browse/
+# Metadata properties: https://review.learn.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
 languages:
 - csharp
 page_type: sample
 name: ASP.NET Core minimal web API that both protects its own endpoints and accesses Microsoft Graph.
-description: This ASP.NET Core minimal web API protects an API endpoint that access on behalf of the user another protected API. The code in this sample is used by one or more articles on docs.microsoft.com.
+description: This ASP.NET Core minimal web API protects an API endpoint that access on behalf of the user another protected API. The code in this sample is used by one or more articles on learn.microsoft.com.
 products:
 - azure
 - entra-id
@@ -19,7 +19,7 @@ urlFragment: ms-identity-docs-code-obo-user-csharp
 ![Build passing.](https://img.shields.io/badge/build-passing-brightgreen.svg) ![Code coverage.](https://img.shields.io/badge/coverage-100%25-brightgreen.svg) ![License.](https://img.shields.io/badge/license-MIT-green.svg)
 -->
 
-This ASP.NET Core minimal web API uses the Microsoft identity platform to protect an endpoint (require authorized access), and also accesses Microsoft Graph on behalf of the user. The API uses [ASP.NET Core Identity](https://docs.microsoft.com/aspnet/core/security/authentication/identity?view=aspnetcore-8.0) interacting with the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/entra/identity-platform/msal-overview) to protect its endpoint.
+This ASP.NET Core minimal web API uses the Microsoft identity platform to protect an endpoint (require authorized access), and also accesses Microsoft Graph on behalf of the user. The API uses [ASP.NET Core Identity](https://learn.microsoft.com/aspnet/core/security/authentication/identity?view=aspnetcore-8.0) interacting with the [Microsoft Authentication Library (MSAL)](https://learn.microsoft.com/entra/identity-platform/msal-overview) to protect its endpoint.
 
 ```console
 $ curl https://localhost:5001/api/me -H "Authorization: Bearer {valid-access-token}"
@@ -38,7 +38,7 @@ $ curl https://localhost:5001/api/me -H "Authorization: Bearer {valid-access-tok
 }
 ```
 
-> :page_with_curl: This sample application backs one or more technical articles on docs.microsoft.com. <!-- TODO: Link to first tutorial in series when published. -->
+> :page_with_curl: This sample application backs one or more technical articles on learn.microsoft.com. <!-- TODO: Link to first tutorial in series when published. -->
 
 ## Prerequisites
 

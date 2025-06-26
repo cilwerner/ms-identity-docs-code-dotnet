@@ -20,7 +20,7 @@ The [Microsoft Entra Connect tool](https://www.microsoft.com/download/details.as
 
 ## Before you install Microsoft Entra Connect
 
-Read the [Microsoft Entra Connect prerequisites](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites) before installing it. This documentation contains information about hardware and software requirements, security guidelines, installation best practices, and operations not supported by the tool.
+Read the [Microsoft Entra Connect prerequisites](https://learn.microsoft.com/azure/active-directory/hybrid/how-to-connect-install-prerequisites) before installing it. This documentation contains information about hardware and software requirements, security guidelines, installation best practices, and operations not supported by the tool.
 
 ## Installing Microsoft Entra Connect
 
@@ -42,7 +42,7 @@ Use [Graph Explorer](https://aka.ms/ge) to carefully examine the attributes of *
 
 If you run Microsoft Entra Connect installation wizard again, it offers options for maintenance and to set additional tasks.
 
-See [additional tasks available](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-installation-wizard) for details about extra configuration steps.
+See [additional tasks available](https://learn.microsoft.com/azure/active-directory/hybrid/how-to-connect-installation-wizard) for details about extra configuration steps.
 
 ## Next Step
 
@@ -51,4 +51,4 @@ See [additional tasks available](https://docs.microsoft.com/azure/active-directo
 
 ## Useful resources
 
-- Learn how to [migrate the web app SAML application to Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure).
+- Learn how to [migrate the web app SAML application to Microsoft Entra ID](https://learn.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure).

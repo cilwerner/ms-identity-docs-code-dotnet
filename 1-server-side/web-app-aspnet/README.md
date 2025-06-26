@@ -1,11 +1,11 @@
 ---
-# Metadata required by https://docs.microsoft.com/samples/browse/
-# Metadata properties: https://review.docs.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
+# Metadata required by https://learn.microsoft.com/samples/browse/
+# Metadata properties: https://review.learn.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
 languages:
 - csharp
 page_type: sample
 name: "ASP.NET Core 8.0 Web App Sign-in user"
-description: "This is a ASP.NET Core 8.0 Web App that sign-in users. The code in this sample is used by one or more articles on docs.microsoft.com."
+description: "This is a ASP.NET Core 8.0 Web App that sign-in users. The code in this sample is used by one or more articles on learn.microsoft.com."
 products:
 - azure
 - entra-id
@@ -15,13 +15,13 @@ urlFragment: ms-identity-docs-code-csharp-sign-in
 
 # ASP.NET Core 8.0 Web App - Sign-in user | Microsoft identity platform
 
-This web app, built with ASP.NET Core 8.0 Razor, has added sign-in features. It uses the [OpenID Connect](https://docs.microsoft.com/en-us/entra/identity-platform/v2-protocols-oidc) and [ASP.NET Core Identity](https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-8.0) for authentication. This allows users to sign in with their Microsoft Entra accounts. Once signed in, the app can access protected resources on the user’s behalf.
+This web app, built with ASP.NET Core 8.0 Razor, has added sign-in features. It uses the [OpenID Connect](https://learn.microsoft.com/en-us/entra/identity-platform/v2-protocols-oidc) and [ASP.NET Core Identity](https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-8.0) for authentication. This allows users to sign in with their Microsoft Entra accounts. Once signed in, the app can access protected resources on the user’s behalf.
 
 ## Quickstart and tutorial guides for this sample
 
 - For a quickstart experience that gets you started fast, see [Quickstart: Sign in users and call the Microsoft Graph API from an ASP.NET Core web app](https://learn.microsoft.com/entra/identity-platform/quickstart-web-app-dotnet-core-sign-in).
 
-- For a in-depth tutorial that walks you through this sample from start to finish, see [Tutorial: Sign in users and call the Microsoft Graph API from an ASP.NET Core web app](https://docs.microsoft.com/entra/identity-platform/tutorial-web-app-dotnet-register-app).
+- For a in-depth tutorial that walks you through this sample from start to finish, see [Tutorial: Sign in users and call the Microsoft Graph API from an ASP.NET Core web app](https://learn.microsoft.com/entra/identity-platform/tutorial-web-app-dotnet-register-app).
 
 ## Prerequisites
 
@@ -32,7 +32,7 @@ This web app, built with ASP.NET Core 8.0 Razor, has added sign-in features. It 
 
 ### 1. Register the web API application in your Microsoft Entra ID
 
-First, complete the steps in [Register an application with the Microsoft identity platform](https://docs.microsoft.com/entra/identity-platform/tutorial-web-app-dotnet-register-app) to register a web application in the Microsoft identity platform.
+First, complete the steps in [Register an application with the Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/tutorial-web-app-dotnet-register-app) to register a web application in the Microsoft identity platform.
 
 Use the following settings for your app registration:
 
@@ -92,7 +92,7 @@ Use the following settings for your app registration:
 
 The ASP.NET Core 8.0 Web App will allow users to sign-in, so it can retrieve a Security Token scoped specifically for the Microsoft Graph API, and will use that token to access the user's information. For more information about the proposed scenario, please take a look at the following diagram:
 
-:link: For more information about how to proctect your projects, please let's take a look at https://docs.microsoft.com/en-us/azure/active-directory/develop/sample-v2-code. To know more about how this sample has been generated, please visit https://docs.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-8.0
+:link: For more information about how to proctect your projects, please let's take a look at https://learn.microsoft.com/en-us/entra/identity-platform/sample-v2-code. To know more about how this sample has been generated, please visit https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-8.0
 
 ## Reporting problems
 

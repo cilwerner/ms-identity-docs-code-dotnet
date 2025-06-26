@@ -20,10 +20,10 @@ This folder contains a collection of server-side .NET samples demonstrating vari
 
 ## Resources
 
-- [Microsoft Identity Platform Documentation](https://learn.microsoft.com/azure/active-directory/develop/)
-- [Microsoft.Identity.Web Library](https://learn.microsoft.com/azure/active-directory/develop/microsoft-identity-web)
-- [MSAL.NET Library](https://learn.microsoft.com/azure/active-directory/develop/msal-overview)
-- [Azure AD App Registration](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app)
+- [Microsoft Identity Platform Documentation](https://learn.microsoft.com/entra/identity-platform/)
+- [Microsoft.Identity.Web Library](https://learn.microsoft.com/entra/identity-platform/microsoft-identity-web)
+- [MSAL.NET Library](https://learn.microsoft.com/entra/identity-platform/msal-overview)
+- [Azure AD App Registration](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app)
 - [Securing ASP.NET Core with Microsoft Identity](https://learn.microsoft.com/aspnet/core/security/authentication/identity)
 - [Azure Functions Authentication](https://learn.microsoft.com/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=csharp#authorization-keys)
 

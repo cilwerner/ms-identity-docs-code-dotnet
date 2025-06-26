@@ -12,7 +12,7 @@ namespace BackgroundWorker
 {
 
     /// <summary>
-    /// code from -> https://docs.microsoft.com/en-us/dotnet/core/extensions/custom-logging-provider
+    /// code from -> https://learn.microsoft.com/en-us/dotnet/core/extensions/custom-logging-provider
     /// </summary>
     /// <seealso cref="Microsoft.Extensions.Logging.ILogger" />
     public class ColorConsoleLogger : ILogger

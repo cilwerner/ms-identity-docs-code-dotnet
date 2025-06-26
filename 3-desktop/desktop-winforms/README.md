@@ -1,6 +1,6 @@
 ---
-# Metadata required by https://docs.microsoft.com/samples/browse/
-# Metadata properties: https://review.docs.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
+# Metadata required by https://learn.microsoft.com/samples/browse/
+# Metadata properties: https://review.learn.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
 languages:
 - csharp
 page_type: sample
@@ -22,7 +22,7 @@ This .NET Windows Forms application authenticates a user and then makes a reques
 ## Prerequisites
 
 - Microsoft Entra tenant and the permissions or role required for managing app registrations in the tenant.
-- Visual Studio 2022, [configured for the .NET 8 desktop development workload](https://docs.microsoft.com/dotnet/desktop/winforms/get-started/create-app-visual-studio?view=netdesktop-8.0#prerequisites)
+- Visual Studio 2022, [configured for the .NET 8 desktop development workload](https://learn.microsoft.com/dotnet/desktop/winforms/get-started/create-app-visual-studio?view=netdesktop-8.0#prerequisites)
 
 ## Setup
 

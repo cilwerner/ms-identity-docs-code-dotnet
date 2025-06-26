@@ -1,11 +1,11 @@
 ---
-# Metadata required by https://docs.microsoft.com/samples/browse/
-# Metadata properties: https://review.docs.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
+# Metadata required by https://learn.microsoft.com/samples/browse/
+# Metadata properties: https://review.learn.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
 languages:
 - csharp
 page_type: sample
 name: C# Azure Function that protects an HTTP trigger function with Easy Auth and access token scope validation.
-description: This C# Azure Function protects its own HTTP Trigger function with Easy Auth and access token scope validation. The code in this sample is used by one or more articles on docs.microsoft.com.
+description: This C# Azure Function protects its own HTTP Trigger function with Easy Auth and access token scope validation. The code in this sample is used by one or more articles on learn.microsoft.com.
 products:
 - azure
 - entra-id
@@ -26,14 +26,14 @@ $ curl https://<your-function>.azurewebsites.net/api/greeting -H "Authorization:
 Hello, world. You were able to access this because you provided a valid access token with the Greeting.Read scope as a claim.
 ```
 
-> :page_with_curl: This sample application backs one or more technical articles on docs.microsoft.com. <!-- TODO: Link to first tutorial in series when published. -->
+> :page_with_curl: This sample application backs one or more technical articles on learn.microsoft.com. <!-- TODO: Link to first tutorial in series when published. -->
 
 ## Prerequisites
 
 - Microsoft Entra tenant and the permissions or role required for managing app registrations in the tenant.
 - [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- An empty [C# Azure function (v4)](https://docs.microsoft.com/azure/azure-functions/create-first-function-cli-csharp) deployed to Azure, and the permissions or role required to modify its settings.
-- [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local)
+- An empty [C# Azure function (v4)](https://learn.microsoft.com/azure/azure-functions/create-first-function-cli-csharp) deployed to Azure, and the permissions or role required to modify its settings.
+- [Azure Functions Core Tools](https://learn.microsoft.com/azure/azure-functions/functions-run-local)
 
 ## Setup
 
@@ -54,7 +54,7 @@ Use these settings in your app registration.
 
 ### 2. Enable Function app authentication
 
-Next, complete the steps in [Enable Microsoft Entra ID in your App Service app](https://docs.microsoft.com/azure/app-service/configure-authentication-provider-aad?toc=/azure/azure-functions/toc.json#-enable-azure-active-directory-in-your-app-service-app) to add Microsoft Entra ID as an identity provider for your API.
+Next, complete the steps in [Enable Microsoft Entra ID in your App Service app](https://learn.microsoft.com/azure/app-service/configure-authentication-provider-aad?toc=/azure/azure-functions/toc.json#-enable-azure-active-directory-in-your-app-service-app) to add Microsoft Entra ID as an identity provider for your API.
 
 Use these settings in your identity provider configuration.
 
@@ -93,7 +93,7 @@ Hello, world. You were able to access this because you provided a valid access t
 
 ## About the code
 
-This Azure Function is an anonymous HTTP trigger written in csharp and uses the built-in [Authentication and authorization in Azure Functions](https://docs.microsoft.com/azure/app-service/overview-authentication-authorization) feature to offload fundamental JWT access token validation. Requests that make it through the built-in authentication feature of Azure Functions are then routed to the csharp code, which applies additional access token validation checking for a specific scope.
+This Azure Function is an anonymous HTTP trigger written in csharp and uses the built-in [Authentication and authorization in Azure Functions](https://learn.microsoft.com/azure/app-service/overview-authentication-authorization) feature to offload fundamental JWT access token validation. Requests that make it through the built-in authentication feature of Azure Functions are then routed to the csharp code, which applies additional access token validation checking for a specific scope.
 
 - A missing or invalid (expired, wrong audience, etc) token will result in a `401` response. (Handled by Azure Functions authentication)
 - An otherwise valid token without the proper scope will result in a `403` response.

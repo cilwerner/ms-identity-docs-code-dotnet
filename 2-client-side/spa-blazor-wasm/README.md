@@ -1,11 +1,11 @@
 ---
-# Metadata required by https://docs.microsoft.com/samples/browse/
-# Metadata properties: https://review.docs.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
+# Metadata required by https://learn.microsoft.com/samples/browse/
+# Metadata properties: https://review.learn.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
 languages:
 - csharp
 page_type: sample
 name: ASP.NET Core 8.0 Blazor WebAssembly that accesses Microsoft Graph
-description: This ASP.NET Core 8.0 Blazor WebAssembly that signs in and contacts Microsoft Graph on behalf of the user. The code in this sample is used by one or more articles on docs.microsoft.com.
+description: This ASP.NET Core 8.0 Blazor WebAssembly that signs in and contacts Microsoft Graph on behalf of the user. The code in this sample is used by one or more articles on learn.microsoft.com.
 products:
 - azure
 - entra-id
@@ -104,7 +104,7 @@ If you can't get the sample working, you've checked [Stack Overflow](http://stac
 
 > :warning: WARNING: Any issue _not_ limited to running this or another sample app will be closed without being addressed.
 
-For all other requests, see [Support and help options for developers | Microsoft identity platform](https://learn.microsoft.com/azure/active-directory/develop/developer-support-help-options).
+For all other requests, see [Support and help options for developers | Microsoft identity platform](https://learn.microsoft.com/entra/identity-platform/developer-support-help-options).
 
 ## Contributing
 

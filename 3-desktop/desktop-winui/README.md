@@ -1,6 +1,6 @@
 ---
-# Metadata required by https://docs.microsoft.com/samples/browse/
-# Metadata properties: https://review.docs.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
+# Metadata required by https://learn.microsoft.com/samples/browse/
+# Metadata properties: https://review.learn.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
 languages:
 - csharp
 page_type: sample
@@ -26,7 +26,7 @@ This .NET WinUI 3 Packaged Desktop App authenticates a user and then makes a req
 ## Prerequisites
 
 - Microsoft Entra tenant and the permissions or role required for managing app registrations in the tenant.
-- Visual Studio 2022, [configured with WinUI 3 workload and components](https://docs.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment?tabs=vs-2022-17-1-a%2Cvs-2022-17-1-b#required-workloads-and-components)
+- Visual Studio 2022, [configured with WinUI 3 workload and components](https://learn.microsoft.com/windows/apps/windows-app-sdk/set-up-your-development-environment?tabs=vs-2022-17-1-a%2Cvs-2022-17-1-b#required-workloads-and-components)
 
 ## Setup
 

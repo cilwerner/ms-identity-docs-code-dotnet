@@ -144,9 +144,9 @@ Start the application, sign-in and check the result in the console.
 
 ## About the code
 
-MSAL has the class [SystemWebViewOptions.cs](https://docs.microsoft.com/dotnet/api/microsoft.identity.client.systemwebviewoptions?view=azure-dotnet) which allows you to set properties to customize the UI after the authentication request.
+MSAL has the class [SystemWebViewOptions.cs](https://learn.microsoft.com/dotnet/api/microsoft.identity.client.systemwebviewoptions?view=azure-dotnet) which allows you to set properties to customize the UI after the authentication request.
 
-In this sample, we customized the HTML for successful and failure authorization requests, but more options are available. Please refer to the [SystemWebViewOptions.cs documentation](https://docs.microsoft.com/dotnet/api/microsoft.identity.client.systemwebviewoptions?view=azure-dotnet) for more options.
+In this sample, we customized the HTML for successful and failure authorization requests, but more options are available. Please refer to the [SystemWebViewOptions.cs documentation](https://learn.microsoft.com/dotnet/api/microsoft.identity.client.systemwebviewoptions?view=azure-dotnet) for more options.
 
 1- Customizing the success or failure HTML message:
 

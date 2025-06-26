@@ -23,7 +23,7 @@ The [MSAL.NET](http://aka.ms/msal-net) and the [Microsoft.Identity.Web](https://
 
 This tutorial explains how by sharing the same app registration in [Azure Portal](https://portal.azure.com/) (sharing the same client Id), background processes and services can still continue to work on behalf of the user after the user has exited the frontend web app.
 
-Today, most background processes that need to work with user's data without them being present to authenticate or re-authenticate make use of [Application Permissions](https://docs.microsoft.com/graph/auth/auth-concepts#microsoft-graph-permissions) which often require an [admin consent](https://learn.microsoft.com/entra/identity-platform/v2-admin-consent). This requires an elevation of privilege and is often an unnecessary hassle as the developer originally did not intend to obtain a permission over what a user consents to their app.
+Today, most background processes that need to work with user's data without them being present to authenticate or re-authenticate make use of [Application Permissions](https://learn.microsoft.com/graph/auth/auth-concepts#microsoft-graph-permissions) which often require an [admin consent](https://learn.microsoft.com/entra/identity-platform/v2-admin-consent). This requires an elevation of privilege and is often an unnecessary hassle as the developer originally did not intend to obtain a permission over what a user consents to their app.
 
 ## Contents
 
@@ -68,7 +68,7 @@ For more information, visit the following links:
 - [Articles about the Microsoft identity platform](https://aka.ms/aaddevv2)
 - Learn about [Microsoft.Identity.Web](https://github.com/AzureAD/microsoft-identity-web/wiki)
 - Learn how to enable distributed caches in [token cache serialization](https://github.com/AzureAD/microsoft-identity-web/wiki/token-cache-serialization)
-- [Use HttpClientFactory to implement resilient HTTP requests](https://docs.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests) used by the Graph custom service
+- [Use HttpClientFactory to implement resilient HTTP requests](https://learn.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests) used by the Graph custom service
 
 ## Community Help and Support
 

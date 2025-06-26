@@ -95,8 +95,8 @@ Happy coding!
 ## Resources
 
 - Documentation on learn.microsoft.com
-  - [Microsoft identity platform product documentation](https://learn.microsoft.com/azure/active-directory/develop/)
-  - [Microsoft Authentication Library (MSAL) documentation](https://learn.microsoft.com/azure/active-directory/develop/msal-overview)
+  - [Microsoft identity platform product documentation](https://learn.microsoft.com/entra/identity-platform/)
+  - [Microsoft Authentication Library (MSAL) documentation](https://learn.microsoft.com/entra/identity-platform/msal-overview)
 - Authentication library source code on GitHub
   - [Microsoft Authentication Library for .NET](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet)
   - [Microsoft.Identity.Web](https://github.com/AzureAD/microsoft-identity-web)

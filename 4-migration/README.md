@@ -13,14 +13,14 @@ urlFragment: "ms-identity-dotnet-adfs-to-aad"
 
 This set of ASP.NET code samples and accompanying tutorials will help you learn how to safely and securely migrate your applications integrated with Active Directory Federation Services (AD FS) to Microsoft Entra (Microsoft Entra). This tutorial is focused towards developers who not only need to learn configuring apps on both AD FS and Microsoft Entra, but also become aware and confident of changes their code base will require in this process.
 
-These code samples are a companion to [Moving application authentication from AD FS to Microsoft Entra](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure) available on the Microsoft Docs site.   
+These code samples are a companion to [Moving application authentication from AD FS to Microsoft Entra](https://learn.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure) available on the Microsoft Docs site.   
 
 The folders in this repo are arranged as *chapters*, each with a README and sample code for a scenario. The chapters cover the most common types of authentication utilized by applications integrated with AD FS today, and we hope they let you learn and gain valuable experience before undertaking an app migration initiative for your applications currently running in production.
 
 ## Prerequisites
 
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework)
-- [AD FS](https://docs.microsoft.com/windows-server/identity/ad-fs/ad-fs-overview) environment
+- [AD FS](https://learn.microsoft.com/windows-server/identity/ad-fs/ad-fs-overview) environment
 - [Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 
 ## Migration steps
@@ -29,31 +29,24 @@ By following the tutorial chapters in this code sample, you progress through the
 
 - We start by integrating the provided sample web application with an AD FS instance. This web app uses the [SAML](https://learn.microsoft.com/entra/identity-platform/single-sign-on-saml-protocol) protocol for it authentication setup. 
 - Next, we'd migrate this application to an Microsoft Entra tenant.
-- Finally, we also provide instructions as how to change the authentication protocol from SAML to [OAuth 2.0 and OpenID Connect](https://learn.microsoft.com/entra/identity-platform/active-directory-v2-protocols). This change allows you to reap the benefits of accessing rich APIs like [Microsoft Graph](https://docs.microsoft.com/graph/overview) and the [Azure REST API](https://docs.microsoft.com/rest/api/azure/) amongst others.
+- Finally, we also provide instructions as how to change the authentication protocol from SAML to [OAuth 2.0 and OpenID Connect](https://learn.microsoft.com/entra/identity-platform/active-directory-v2-protocols). This change allows you to reap the benefits of accessing rich APIs like [Microsoft Graph](https://learn.microsoft.com/graph/overview) and the [Azure REST API](https://learn.microsoft.com/rest/api/azure/) amongst others.
 
 We have also covered the following topics in some detail as they might play a big part in your app migration work:
 
-- Configuring [Microsoft Entra Connect sync](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
-- Migrating [Directory Extensions](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions) to Microsoft Entra.
+- Configuring [Microsoft Entra Connect sync](https://learn.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).
+- Migrating [Directory Extensions](https://learn.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions) to Microsoft Entra.
 - Sync and use Security Groups on the migrated application.
 
 ## Contents
 
-### Chapter 1: Integrate sample app with AD FS
-
-|                                                  |                               |
+| Steps                                            |                               |
 |--------------------------------------------------|-------------------------------|
-| [1.1 Integrate app with AD FS](1-ADFS-Host/1-1-Setup-SAML-Playground/README.md) | Integrate the provided ASP.NET MVC web application with an AD FS instance. |
-| [1.2 Set up Microsoft Entra Connect](1-ADFS-Host/1-2-Setup-AzureADConnect/README.md) | A brief look at the Microsoft Entra Connect configuration that synchronizes on=premise data to an Microsoft Entra tenant. |
-| [1.3 Directory Extensions](1-ADFS-Host/1-3-Directory-Extensions/README.md) | Migrate Directory Extensions from on-prem Active Directory to your Microsoft Entra tenant .|
-
-### Chapter 2: Migrate the working web app from AD FS to Microsoft Entra
-
-|                                                  |                               |
-|--------------------------------------------------|-------------------------------|
-| [2.1 Integrate app with Microsoft Entra](2-AAD-Migration/2-1-SAML-WebApp/README.md)| Migrating the SAML ASP.NET MVC web app from AD FS to Microsoft Entra.|
-| [2.2 Using Security groups](2-AAD-Migration/2-2-Security-Groups/README.md) | Using on-premise Active Directory security groups in applications migrated to an Microsoft Entra tenant. |
-| [2.3 Convert from SAML to OIDC](2-AAD-Migration/2-3-From-SAML-to-OIDC/README.md) | Migrate a SAML ASP.NET application to use [OAuth 2.0 and OpenID Connect](https://learn.microsoft.com/entra/identity-platform/active-directory-v2-protocols).|
+| [1. Integrate app with AD FS](./1-saml-playground/README.md) | Register a .NET MVC Web application on on-prem AD with an AD FS instance |
+| [2. Set up Microsoft Entra Connect](./2-setup-entra-connect/README.md) | A brief look at the Microsoft Entra Connect configuration that synchronizes on=premise data to an Microsoft Entra tenant. |
+| [3. Directory Extensions](./3-migrate-directory-extensions/README.md) | Migrate Directory Extensions from on-prem Active Directory to your Microsoft Entra tenant. |
+| [4. Integrate app with Microsoft Entra](./4-saml-webapp/README.md)| Migrating the SAML ASP.NET MVC web app from AD FS to Microsoft Entra.|
+| [5. Using Security groups](./5-security-groups/README.md) | Using on-premise Active Directory security groups in applications migrated to an Microsoft Entra tenant. |
+| [6. Convert from SAML to OIDC](./6-saml-to-oidc/README.md) | Migrate a SAML ASP.NET application to use [OAuth 2.0 and OpenID Connect](https://learn.microsoft.com/entra/identity-platform/active-directory-v2-protocols).|
 
 For information about Integrated Windows Authentication (IWA), see [Azure-Samples/active-directory-dotnet-iwa-v2](https://github.com/Azure-Samples/active-directory-dotnet-iwa-v2).
 

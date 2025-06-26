@@ -11,7 +11,7 @@ This documentation guides you how to configure an Microsoft Entra application to
 ### Prerequisites
 
 - An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
-- [Microsoft Entra Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis) configured on a domain-joined machine
+- [Microsoft Entra Connect](https://learn.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis) configured on a domain-joined machine
 
 ## Migrate Security Groups
 
@@ -51,7 +51,7 @@ We're always listening, and if you want to get in touch with you directly, send 
 
 One of the most useful scenario in dynamic groups is the usage of Directory Extensions to dynamically associate users to it.
 
-If you would like to configure dynamic groups, [follow this tutorial](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions#use-the-attributes-in-dynamic-groups).
+If you would like to configure dynamic groups, [follow this tutorial](https://learn.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions#use-the-attributes-in-dynamic-groups).
 
 ## Next Step
 
@@ -59,7 +59,7 @@ If you would like to configure dynamic groups, [follow this tutorial](https://do
 
 ### Useful resources
 
-- [Moving application authentication from AD FS to Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
-- [Configure SAML-based single sign-on to non-gallery applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)
-- [Synchronizing Directory Extensions to Microsoft Entra](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions)
-- [Using Directory Extensions in Dynamic groups](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions#use-the-attributes-in-dynamic-groups)
+- [Moving application authentication from AD FS to Microsoft Entra ID](https://learn.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
+- [Configure SAML-based single sign-on to non-gallery applications](https://learn.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)
+- [Synchronizing Directory Extensions to Microsoft Entra](https://learn.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions)
+- [Using Directory Extensions in Dynamic groups](https://learn.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-feature-directory-extensions#use-the-attributes-in-dynamic-groups)

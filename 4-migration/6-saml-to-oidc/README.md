@@ -9,7 +9,7 @@ Here we migrate the provided ASP.NET web application that uses the [SAML](https:
 
 This sample uses the `Microsoft.Owin.Security.WsFederation` library for authenticating users using SAML, which we will change to use the `Microsoft.Owin.Security.OpenIdConnect` library instead.
 
-Application developers might consider this to enable their applications to be able to work with [OAuth 2.0](https://learn.microsoft.com/entra/identity-platform/v2-app-types) based Web APIs like [Microsoft Graph](https://docs.microsoft.com/graph/overview) and [Azure REST API](https://docs.microsoft.com/rest/api/azure/).
+Application developers might consider this to enable their applications to be able to work with [OAuth 2.0](https://learn.microsoft.com/entra/identity-platform/v2-app-types) based Web APIs like [Microsoft Graph](https://learn.microsoft.com/graph/overview) and [Azure REST API](https://learn.microsoft.com/rest/api/azure/).
 
 ### Prerequisites
 
@@ -99,5 +99,5 @@ We're always listening, and if you want to get in touch with you directly, send 
 
 ### Useful resources
 
-- [Moving application authentication from AD FS to Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
-- [Configure SAML-based single sign-on to non-gallery applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)
+- [Moving application authentication from AD FS to Microsoft Entra ID](https://learn.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
+- [Configure SAML-based single sign-on to non-gallery applications](https://learn.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)

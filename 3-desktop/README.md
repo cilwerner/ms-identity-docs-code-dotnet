@@ -1,6 +1,6 @@
 # Desktop Samples
 
-This folder contains .NET desktop samples demonstrating authentication and authorization scenarios using the Microsoft identity platform. These samples cover a variety of desktop technologies, including Console, WinForms, WPF, WinUI, and cross-platform MAUI.
+This folder contains .NET desktop samples demonstrating authentication and authorization scenarios using the Microsoft identity platform. These samples cover a variety of desktop technologies, including Console, Windows Forms, WPF, WinUI, and cross-platform MAUI.
 
 ## Samples Overview
 
@@ -25,10 +25,10 @@ This folder contains .NET desktop samples demonstrating authentication and autho
 
 ## Resources
 
-- [Microsoft Identity Platform Documentation](https://learn.microsoft.com/azure/active-directory/develop/)
-- [Microsoft.Identity.Client (MSAL.NET) Library](https://learn.microsoft.com/azure/active-directory/develop/msal-overview)
-- [Azure AD App Registration](https://learn.microsoft.com/azure/active-directory/develop/quickstart-register-app)
-- [Securing Desktop Apps with Microsoft Identity](https://learn.microsoft.com/azure/active-directory/develop/tutorial-v2-windows-desktop)
+- [Microsoft Identity Platform Documentation](https://learn.microsoft.com/entra/identity-platform/)
+- [Microsoft.Identity.Client (MSAL.NET) Library](https://learn.microsoft.com/entra/identity-platform/msal-overview)
+- [Azure AD App Registration](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app)
+- [Securing Desktop Apps with Microsoft Identity](https://learn.microsoft.com/entra/identity-platform/tutorial-v2-windows-desktop)
 - [Microsoft .NET Desktop Documentation](https://learn.microsoft.com/dotnet/desktop/)
 
 ---

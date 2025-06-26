@@ -2,7 +2,7 @@
 
 ## Scenario
 
-In this chapter, we'd integrate the provided .NET MVC web application to an AD FS instance first.
+In this chapter, we integrate the provided .NET MVC web application to an AD FS instance first.
 
 ### About the sample
 
@@ -87,6 +87,6 @@ In the next chapter, we'd cover [Microsoft Entra Connect sync configuration for 
 
 ### Useful resources
 
-- [Moving application authentication from AD FS to Microsoft Entra ID](https://docs.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
+- [Moving application authentication from AD FS to Microsoft Entra ID](https://learn.microsoft.com/azure/active-directory/manage-apps/migrate-adfs-apps-to-azure)
 - [AD FS to Microsoft Entra app Migration Tool](https://github.com/AzureAD/Deployment-Plans/blob/master/ADFS%20to%20AzureAD%20App%20Migration/Readme.md)
-- [Configure SAML-based single sign-on to non-gallery applications](https://docs.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)
+- [Configure SAML-based single sign-on to non-gallery applications](https://learn.microsoft.com/azure/active-directory/manage-apps/configure-single-sign-on-non-gallery-applications)

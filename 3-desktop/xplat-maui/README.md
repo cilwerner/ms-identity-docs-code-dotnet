@@ -1,11 +1,11 @@
 ---
-# Metadata required by https://docs.microsoft.com/samples/browse/
-# Metadata properties: https://review.docs.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
+# Metadata required by https://learn.microsoft.com/samples/browse/
+# Metadata properties: https://review.learn.microsoft.com/help/contribute/samples/process/onboarding?branch=main#add-metadata-to-readme
 languages:
 - csharp
 page_type: sample
 name: .NET MAUI Multi-platform App Sign-in user
-description: This .NET Multi-platform App UI (.NET MAUI) app signs in the user and then makes a request to Microsoft Graph for the user's profile data. The code in this sample is used by one or more articles on docs.microsoft.com.
+description: This .NET Multi-platform App UI (.NET MAUI) app signs in the user and then makes a request to Microsoft Graph for the user's profile data. The code in this sample is used by one or more articles on learn.microsoft.com.
 products:
 - azure
 - entra-id
@@ -25,15 +25,15 @@ This sample demonstrates a Windows desktop and Android mobile .NET MAUI Multi-pl
 
 ![A screenshot on Android displaying a response from Microsoft Graph](./app.png)
 
-> :page_with_curl: This sample application backs one or more technical articles on docs.microsoft.com. <!-- TODO: Link to first tutorial in series when published. -->
+> :page_with_curl: This sample application backs one or more technical articles on learn.microsoft.com. <!-- TODO: Link to first tutorial in series when published. -->
 
 ## Prerequisites
 
 - A Microsoft Entra tenant. You can [open an Azure account for free](https://azure.microsoft.com/free) to get a Microsoft Entra instance.
 - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
-- [.NET MAUI](https://docs.microsoft.com/en-us/dotnet/maui/get-started/installation)
+- [.NET MAUI](https://learn.microsoft.com/en-us/dotnet/maui/get-started/installation)
 - **Install apps from any source** enabled in Windows' developer settings
-- [Device Emulators are configured](https://docs.microsoft.com/en-us/dotnet/maui/get-started/first-app)
+- [Device Emulators are configured](https://learn.microsoft.com/en-us/dotnet/maui/get-started/first-app)
 
 ## Setup
 
