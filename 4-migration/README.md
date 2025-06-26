@@ -56,7 +56,6 @@ Were we successful in addressing your learning objective? [Do consider taking a 
 
 We're always listening, and if you want to get in touch with you directly, send an email to <aadappfeedback@microsoft.com>.
 
-
 ## Community Help and Support
 
 Use [Stack Overflow](http://stackoverflow.com/questions/tagged/msal) to get support from the community.

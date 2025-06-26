@@ -16,13 +16,13 @@ Each scenario folder contains one or more samples, each with its own README and 
 
 ## 🗂️ Sample Scenarios
 
-| Folder             | Description                                                                                   |
-|--------------------|----------------------------------------------------------------------------------------------|
-| **1-server-side**  | Server-side web apps and APIs using ASP.NET Core, Blazor Server, and daemon/background apps. |
-| **2-client-side**  | Single-page applications (SPA) using Blazor WASM, Angular, React, or Vue.                    |
-| **3-desktop**      | Desktop applications using WinForms, WPF, WinUI, or Console.                                 |
-| **4-migration**    | Migration playbooks and samples (e.g., ADFS to Microsoft Entra).                                    |
-| **5-advanced**     | Advanced scenarios such as distributed token cache, multi-tenant, and custom policies.        |
+| Folder                                 | Description                                                                                  |
+|----------------------------------------|----------------------------------------------------------------------------------------------|
+| **[1-server-side](./1-server-side/)**  | Server-side web apps and APIs using ASP.NET Core, Blazor Server, and daemon/background apps. |
+| **[2-client-side](./2-client-side/)**  | Single-page applications (SPA) using Blazor WASM, Angular, React, or Vue.                    |
+| **[3-desktop](./3-desktop/)**          | Desktop applications using WinForms, WPF, WinUI, or Console.                                 |
+| **[4-migration](./4-migration/)**      | Migration playbooks and samples (e.g., ADFS to Microsoft Entra).                             |
+| **[5-advanced](./5-advanced/)**        | Advanced scenarios such as distributed token cache, multi-tenant, and custom policies.       |
 
 ---
 
