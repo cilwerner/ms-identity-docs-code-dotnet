@@ -1,4 +1,4 @@
-# Code samples for Microsoft identity platform documentation - .NET, C\#
+# Code samples for Microsoft identity platform documentation - .NET, C# 
 
 Welcome to the Microsoft Identity Platform .NET Code Samples repository!
 
@@ -8,39 +8,28 @@ This repository provides a comprehensive set of end-to-end samples demonstrating
 
 The samples are grouped into five main categories, each corresponding to a common application scenario:
 
-│ ├── 1-server-side/ # Web APIs, Daemon apps, Blazor Server, ASP.NET Core ├── 2-client-side/ # SPA apps (Angular, React, Vue, Blazor WASM) ├── 3-desktop/ # WinForms, WPF, WinUI, Console ├── 4-migration/ # Migration guides (e.g., ADFS to Microsoft Entra) ├── 5-advanced/ # Advanced scenarios (e.g., distributed token cache) └── README.md
-
-Each scenario folder contains one or more samples, each with its own README and instructions.
+| Folder            | App description                                                                                  | Authentication libraries                      |
+|-------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| [1-web-apps](./1-web-apps)      | - ASP.NET Core authentication (OIDC)<br>- Blazor Server authentication                 | - Microsoft.Identity.Web<br>- MSAL.NET        |
+| [2-web-apis](./2-web-apis)      | - Protected Web API<br>- Azure Function API<br>- On-Behalf-Of (OBO) flows              | - Microsoft.Identity.Web<br>- MSAL.NET        |
+| [3-client-spa](./3-client-spa)  | - Blazor WebAssembly SPA authentication                                                | - Microsoft.Authentication.WebAssembly.Msal<br>- MSAL.NET |
+| [4-desktop-apps](./4-desktop-apps) | - WinForms, WPF, WinUI interactive auth<br>- Console device code/daemon<br>- .NET MAUI cross-platform | - MSAL.NET                                    |
+| [5-migration](./5-migration)    | - AD FS to Microsoft Entra migration playbooks and samples                             | - Microsoft.Identity.Web<br>- MSAL.NET        |
+| [6-advanced](./6-advanced)      | - Distributed token cache<br>- Multi-tenant scenarios                                  | - Microsoft.Identity.Web<br>- MSAL.NET        |
 
 ---
 
-## 🗂️ Sample Scenarios
-
-| Folder                                 | Description                                                                                  |
-|----------------------------------------|----------------------------------------------------------------------------------------------|
-| **[1-server-side](./1-server-side/)**  | Server-side web apps and APIs using ASP.NET Core, Blazor Server, and daemon/background apps. |
-| **[2-client-side](./2-client-side/)**  | Single-page applications (SPA) using Blazor WASM, Angular, React, or Vue.                    |
-| **[3-desktop](./3-desktop/)**          | Desktop applications using WinForms, WPF, WinUI, or Console.                                 |
-| **[4-migration](./4-migration/)**      | Migration playbooks and samples (e.g., ADFS to Microsoft Entra).                             |
-| **[5-advanced](./5-advanced/)**        | Advanced scenarios such as distributed token cache, multi-tenant, and custom policies.       |
+Each folder contains one or more samples, each with its own README and instructions.
 
 ---
 
 ## 🚀 Getting Started
 
-1. **Browse the scenario folders** above to find the sample that matches your use case.
+1. **Browse the folders above** to find the sample that matches your use case.
 2. **Read the sample’s README.md** for prerequisites, setup instructions, and code walkthroughs.
 3. **Clone and run the sample** following the provided steps.
 
 All samples are built with the latest supported .NET versions and Microsoft.Identity libraries.
-
----
-
-## 🔍 Finding the Right Sample
-
-- **By scenario:** Start with the folder that matches your application type (server-side, client-side, desktop, migration, advanced).
-- **By technology:** Within each folder, samples are organized by technology (e.g., ASP.NET Core, WPF, WinForms).
-- **By feature:** Each sample README highlights the authentication flow, APIs called, and any advanced features.
 
 ---
 
@@ -72,26 +61,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-Happy coding!
-
-## Contents
-
-| Sample directory                                    | Application type | Feature(s) demonstrated | Authentication libraries used |
-|:----------------------------------------------------|------------------|-------------------------|-------------------------------|
-| [console-cli](./console-cli)                        |                  |                         |                               |
-| [console-daemon](./console-daemon)                  |                  |                         |                               |
-| [desktop-winforms](./desktop-winforms/)             |                  |                         |                               |
-| [desktop-winui](./desktop-winui/)                   |                  |                         |                               |
-| [desktop-wpf](./desktop-wpf/)                       |                  |                         |                               |
-| [spa-blazor-wasm](./spa-blazor-wasm/)               |                  |                         |                               |
-| [web-api](./web-api/)                               |                  |                         |                               |
-| [web-api-azure-function](./web-api-azure-function/) |                  |                         |                               |
-| [web-api-obo-client](./web-api-obo-client/)         |                  |                         |                               |
-| [web-api-obo-user](./web-api-obo-user/)             |                  |                         |                               |
-| [web-app-aspnet](./web-app-aspnet/)                 |                  |                         |                               |
-| [web-app-blazor-server](./web-app-blazor-server/)   |                  |                         |                               |
-| [xplat-maui](./xplat-maui/)                         |                  |                         |                               |
-
 ## Resources
 
 - Documentation on learn.microsoft.com
@@ -100,3 +69,7 @@ Happy coding!
 - Authentication library source code on GitHub
   - [Microsoft Authentication Library for .NET](https://github.com/AzureAD/microsoft-authentication-library-for-dotnet)
   - [Microsoft.Identity.Web](https://github.com/AzureAD/microsoft-identity-web)
+
+---
+
+Happy coding!
