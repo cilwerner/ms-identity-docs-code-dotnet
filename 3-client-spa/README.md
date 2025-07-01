@@ -4,7 +4,7 @@ This folder contains client-side .NET samples demonstrating authentication and a
 
 ## Samples Overview
 
-| Folder Name                                                           | Authentication Libraries Used                | .NET Version      |
+| 📁 Folder Name                                     | 🔑 Authentication Libraries Used                             | 🏷️ .NET Version  |
 |-----------------------------------------------------------------------|----------------------------------------------|-------------------|
 | [spa-blazor-wasm](./spa-blazor-wasm)                                  | Microsoft.Authentication.WebAssembly.Msal, Microsoft.Identity.Client (MSAL.NET) | .NET 8.0          |
 

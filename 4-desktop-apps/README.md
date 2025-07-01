@@ -1,4 +1,4 @@
-# Desktop Samples
+# 🖥️ Desktop Samples
 
 This folder contains .NET desktop samples demonstrating authentication and authorization scenarios using the Microsoft identity platform. These samples cover a variety of desktop technologies, including Console, Windows Forms, WPF, WinUI, and cross-platform MAUI.
 
@@ -16,18 +16,39 @@ This folder contains .NET desktop samples demonstrating authentication and autho
 | [desktop-wpf](./desktop-wpf)                                                    | Microsoft.Identity.Client (MSAL.NET) 4.x     | .NET 8.0     |
 | [desktop-winui](./desktop-winui)                                                | Microsoft.Identity.Client (MSAL.NET) 4.x     | .NET 8.0     |
 | [xplat-maui](./xplat-maui)                                                      | Microsoft.Identity.Client (MSAL.NET) 4.38.0  | .NET 6.0     |
-<!-- Add any additional folders below as needed, following the same format -->
 
 > **Note:**  
 > All samples use the latest supported versions of the Microsoft identity libraries and are configured for secure, modern authentication scenarios.
 
 ---
 
-## Resources
+### ☑️ Prerequisites
+
+You will need the following to run any of these samples
+
+   - [.NET](https://dotnet.microsoft.com/download/dotnet/8.0)
+   - A Microsoft Entra tenant and app registration (see each sample's README for details)
+   - An editor or IDE such as [Visual Studio](https://visualstudio.microsoft.com/) or [Visual Studio Code](https://code.visualstudio.com/)
+
+### 📥 Clone the Repository
+
+1. Navigate to where you want to have the sample located, and enter the following
+
+    ```sh
+    git clone https://github.com/MicrosoftDocs/ms-identity-docs-code-dotnet.git
+    ```
+2. Navigate to the sample you have downloaded by using the following command
+
+    ```sh
+    cd ms-identity-docs-code-dotnet/4-desktop-apps/<sample-folder>
+    ```
+---
+
+## 📚 Resources
 
 - [Microsoft Identity Platform Documentation](https://learn.microsoft.com/entra/identity-platform/)
 - [Microsoft.Identity.Client (MSAL.NET) Library](https://learn.microsoft.com/entra/identity-platform/msal-overview)
-- [Azure AD App Registration](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app)
+- [Microsoft Entra App Registration](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app)
 - [Securing Desktop Apps with Microsoft Identity](https://learn.microsoft.com/entra/identity-platform/tutorial-v2-windows-desktop)
 - [Microsoft .NET Desktop Documentation](https://learn.microsoft.com/dotnet/desktop/)
 
