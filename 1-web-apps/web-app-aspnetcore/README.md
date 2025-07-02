@@ -86,7 +86,7 @@ Use the following settings for your app registration:
 
 1. Select Sign out
 
-![A screenshot of an ASP.NET Core 8.0 Web App indicating the user signed-out and allowing click "Sign in" to signin again.](./app-signedout.png)
+![A screenshot of an ASP.NET Core 8.0 Web App indicating the user signed-out and allowing click "Sign in" to signin again.](./media/app-signedout.png)
 
 ## About the code
 

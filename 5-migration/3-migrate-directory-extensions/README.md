@@ -7,7 +7,7 @@ This document, [Microsoft Entra Connect](https://learn.microsoft.com/azure/activ
 ### Prerequisites
 
 - An on-premise Active Directory environment
-- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
+- A Microsoft Entra tenant. For more information on how to get a Microsoft Entra tenant, see [How to get a Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 - [Microsoft Entra Connect](https://learn.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis) configured on a domain-joined machine
 
 ## Migrate Directory Extensions
@@ -20,7 +20,7 @@ While **users** and **groups**  will get synced to Microsoft Entra tenant using 
 
 1. Open the Microsoft Entra Connect tool and select **Configure**
 2. Select the option **Customize synchronization options** and click **Next**
-3. Sign-in with an Microsoft Entra global administrator user account
+3. Sign-in with a Microsoft Entra global administrator user account
 4. Select **Next** on the *Connect your directories* tab
 5. Select **Next** on the *Domain and OU filtering* tab
 6. Check the box **Directory extension sync** and click **Next**
@@ -53,7 +53,7 @@ We're always listening, and if you want to get in touch with you directly, send 
 
 ## Next Step
 
-- [Migrate this .NET MVC application to an Microsoft Entra tenant](./../2-AAD-Migration/2-1-SAML-WebApp/README.md)
+- [Migrate this .NET MVC application to a Microsoft Entra tenant](./../2-AAD-Migration/2-1-SAML-WebApp/README.md)
 
 ### Useful resources
 

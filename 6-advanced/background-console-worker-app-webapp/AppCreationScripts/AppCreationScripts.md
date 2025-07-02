@@ -51,7 +51,7 @@ These scripts are:
 
 ### Usage pattern for tests and DevOps scenarios
 
-The `Configure.ps1` will stop if it tries to create an Microsoft Entra application which already exists in the tenant. For this, if you are using the script to try/test the sample, or in DevOps scenarios, you might want to run `Cleanup.ps1` just before `Configure.ps1`. This is what is shown in the steps below.
+The `Configure.ps1` will stop if it tries to create a Microsoft Entra application which already exists in the tenant. For this, if you are using the script to try/test the sample, or in DevOps scenarios, you might want to run `Cleanup.ps1` just before `Configure.ps1`. This is what is shown in the steps below.
 
 ## How to use the app creation scripts?
 

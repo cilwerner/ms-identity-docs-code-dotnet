@@ -21,7 +21,7 @@ description: This sample demonstrates how to share the MSAL token cache between 
 
 ## Overview
 
-This sample shows how a web app thats signs-in users can share its cache of tokens for  signed-in users with a background console application, which can continue to act on-behalf of users in their absence
+This sample shows how a web app thats signs-in users can share its cache of tokens for signed-in users with a background console application, which can continue to act on-behalf of users in their absence
 
 ## Scenario
 

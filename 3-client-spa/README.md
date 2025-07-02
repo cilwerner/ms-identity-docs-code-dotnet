@@ -2,13 +2,13 @@
 
 This folder contains client-side .NET samples demonstrating authentication and authorization scenarios using the Microsoft identity platform. These samples focus on single-page applications (SPA) and client-side Blazor WebAssembly apps.
 
-## Samples Overview
+## 📋 Samples Overview
 
 | 📁 Folder Name                                     | 🔑 Authentication Libraries Used                             | 🏷️ .NET Version  |
-|-----------------------------------------------------------------------|----------------------------------------------|-------------------|
-| [spa-blazor-wasm](./spa-blazor-wasm)                                  | Microsoft.Authentication.WebAssembly.Msal, Microsoft.Identity.Client (MSAL.NET) | .NET 8.0          |
+|----------------------------------------------------|---------------------------------------------------------------|-------------------|
+| [spa-blazor-wasm](./spa-blazor-wasm)               | Microsoft.Authentication.WebAssembly.Msal, Microsoft.Identity.Client (MSAL.NET) | .NET 8.0          |
 
-> **Note:**  
+> [!NOTE]  
 > All samples use the latest supported versions of the Microsoft identity libraries and are configured for secure, modern authentication scenarios.
 
 ---
@@ -32,17 +32,17 @@ You will need the following to run any of these samples
     ```sh
     git clone https://github.com/MicrosoftDocs/ms-identity-docs-code-dotnet.git
     ```
-2. Navigate to the sample you have downloaded by using the following command
+2. Navigate to the SPA folder in the sample you have downloaded by using the following command;
 
     ```sh
-    cd ms-identity-docs-code-dotnet/3-client-spa/<sample-folder>
+    cd ms-identity-docs-code-dotnet/3-client-spa/
     ```
 ---
 
 ## 📚 Resources
 
 - [Microsoft Identity Platform Documentation](https://learn.microsoft.com/entra/identity-platform/)
-- [Microsoft.Identity.Web Library](https://learn.microsoft.com/entra/identity-platform/microsoft-identity-web)
+- [Microsoft.Identity.Web Library](https://learn.microsoft.com/entra/msal/dotnet/microsoft-identity-web/)
 - [MSAL.NET Library](https://learn.microsoft.com/entra/identity-platform/msal-overview)
 - [Microsoft Entra App Registration](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app)
 - [Securing ASP.NET Core with Microsoft Identity](https://learn.microsoft.com/aspnet/core/security/authentication/identity)

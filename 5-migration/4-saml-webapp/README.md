@@ -15,7 +15,7 @@ After the migration, this sample will use the `App Federation Metadata Url` from
 - [Visual Studio](https://aka.ms/vsdownload)
 - [.NET Framework 4.7.2](https://dotnet.microsoft.com/download/dotnet-framework)
 - An AD FS environment
-- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
+- A Microsoft Entra tenant. For more information on how to get a Microsoft Entra tenant, see [How to get a Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 
 ## Migrate the SAML application from ADFSto Microsoft Entra ID
 
@@ -92,7 +92,7 @@ We're always listening, and if you want to get in touch with you directly, send 
 
 ## Next Step
 
-- [Using on-prem Active Directory security groups in an Microsoft Entra application](../2-2-Security-Groups/README.md)
+- [Using on-prem Active Directory security groups in a Microsoft Entra application](../2-2-Security-Groups/README.md)
 
 ### Useful resources
 

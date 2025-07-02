@@ -1,4 +1,4 @@
-# Configure Microsoft Entra Connect to synchronize with an Microsoft Entra tenant
+# Configure Microsoft Entra Connect to synchronize with a Microsoft Entra tenant
 
 ## Scenario
 
@@ -13,10 +13,10 @@ If it is already installed, skip to [Post-Installation steps](#post-installation
 ### Prerequisites
 
 - An on-premise Active Directory environment
-- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
+- A Microsoft Entra tenant. For more information on how to get a Microsoft Entra tenant, see [How to get a Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 - A tenant admin account in Microsoft Entra ID
 
-The [Microsoft Entra Connect tool](https://www.microsoft.com/download/details.aspx?id=47594) will guide you through the initial steps on how to synchronize an AD FS environment with an Microsoft Entra tenant.
+The [Microsoft Entra Connect tool](https://www.microsoft.com/download/details.aspx?id=47594) will guide you through the initial steps on how to synchronize an AD FS environment with a Microsoft Entra tenant.
 
 ## Before you install Microsoft Entra Connect
 
@@ -47,7 +47,7 @@ See [additional tasks available](https://learn.microsoft.com/azure/active-direct
 ## Next Step
 
 - [Optional] If your on premise Active Directory have **Directory Extensions** that you'd like to synchronize to the Microsoft Entra tenant, [move to the next chapter to learn how to migrate them](../1-3-Directory-Extensions/README.md).
-- [Migrate this .NET MVC application to an Microsoft Entra tenant](./../2-AAD-Migration/2-1-SAML-WebApp/README.md)
+- [Migrate this .NET MVC application to a Microsoft Entra tenant](./../2-AAD-Migration/2-1-SAML-WebApp/README.md)
 
 ## Useful resources
 

@@ -10,12 +10,12 @@ The samples are grouped into five main categories, each corresponding to a commo
 
 | Folder            | App description                                                                                  | Authentication libraries                      |
 |-------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| [1-web-apps](./1-web-apps)      | - ASP.NET Core authentication (OIDC)<br>- Blazor Server authentication                 | - Microsoft.Identity.Web<br>- MSAL.NET        |
-| [2-web-apis](./2-web-apis)      | - Protected Web API<br>- Azure Function API<br>- On-Behalf-Of (OBO) flows              | - Microsoft.Identity.Web<br>- MSAL.NET        |
-| [3-client-spa](./3-client-spa)  | - Blazor WebAssembly SPA authentication                                                | - Microsoft.Authentication.WebAssembly.Msal<br>- MSAL.NET |
-| [4-desktop-apps](./4-desktop-apps) | - WinForms, WPF, WinUI interactive auth<br>- Console device code/daemon<br>- .NET MAUI cross-platform | - MSAL.NET                                    |
-| [5-migration](./5-migration)    | - AD FS to Microsoft Entra migration playbooks and samples                             | - Microsoft.Identity.Web<br>- MSAL.NET        |
-| [6-advanced](./6-advanced)      | - Distributed token cache<br>- Multi-tenant scenarios                                  | - Microsoft.Identity.Web<br>- MSAL.NET        |
+| [1-web-apps](./1-web-apps)      | Interactive web applications built with ASP.NET Core (OIDC) and Blazor Server web apps with Microsoft Entra sign-in | Microsoft.Identity.Web<br>MSAL.NET        |
+| [2-web-apis](./2-web-apis)      | Protected Web APIs, Azure Function APIs and APIs for On-Behalf-Of (OBO) flows              | Microsoft.Identity.Web<br>MSAL.NET        |
+| [3-client-spa](./3-client-spa)  | Blazor WebAssembly SPA authentication                                                | Microsoft.Authentication.WebAssembly.Msal<br>MSAL.NET |
+| [4-desktop-apps](./4-desktop-apps) | WinForms, WPF, WinUI interactive authentication apps, console device code/daemon apps and .NET MAUI cross-platform apps | MSAL.NET                                    |
+| [5-migration](./5-migration)    | AD FS to Microsoft Entra ste-by-step migration guide                             | Microsoft.Identity.Web<br>MSAL.NET        |
+| [6-advanced](./6-advanced)      | Access the logged-in user's token cache from background apps, APIs and services  | Microsoft.Identity.Web<br>MSAL.NET        |
 
 ---
 
@@ -25,9 +25,9 @@ Each folder contains one or more samples, each with its own README and instructi
 
 ## 🚀 Getting Started
 
-1. **Browse the folders above** to find the sample that matches your use case.
-2. **Read the sample’s README.md** for prerequisites, setup instructions, and code walkthroughs.
-3. **Clone and run the sample** following the provided steps.
+1. Browse the folders above to find the app type/scenario that matches your use case.
+2. Read the sample’s README.md for prerequisites, setup instructions, and code walkthroughs.
+3. Clone and run the sample following the provided steps.
 
 All samples are built with the latest supported .NET versions and Microsoft.Identity libraries.
 
@@ -35,16 +35,15 @@ All samples are built with the latest supported .NET versions and Microsoft.Iden
 
 ## 📝 Configuration & Security
 
-- **Configuration** is managed via `appsettings.json` and environment variables.
-- **Secrets and credentials** should never be committed to source control. Use [Azure Key Vault](https://learn.microsoft.com/azure/key-vault/general/basic-concepts) or environment variables for sensitive data.
-- **PowerShell scripts** are provided where helpful for Microsoft Entra app registration.
+- Configuration is managed via *appsettings.json* and environment variables.
+- Secrets and credentials should never be committed to source control or exposed in GitHub. Ensure that you keep your credentials and details safe when using the material in these samples. Use [Azure Key Vault](https://learn.microsoft.com/azure/key-vault/general/basic-concepts) or environment variables for sensitive data.
 
 ---
 
 ## 🤝 Contributing
 
 We welcome contributions!  
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on submitting new samples or improvements.
+Please see [*CONTRIBUTING.md*](CONTRIBUTING.md) for guidelines on submitting new samples or improvements.
 
 ---
 
@@ -61,7 +60,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-## Resources
+## 📚 Resources
 
 - Documentation on learn.microsoft.com
   - [Microsoft identity platform product documentation](https://learn.microsoft.com/entra/identity-platform/)

@@ -2,7 +2,7 @@
 
 This folder contains .NET desktop samples demonstrating authentication and authorization scenarios using the Microsoft identity platform. These samples cover a variety of desktop technologies, including Console, Windows Forms, WPF, WinUI, and cross-platform MAUI.
 
-## Samples Overview
+## 📋 Samples Overview
 
 | Folder Name                                                                     | Authentication Libraries Used                | .NET Version          |
 |---------------------------------------------------------------------------------|----------------------------------------------|-----------------------|
@@ -17,7 +17,7 @@ This folder contains .NET desktop samples demonstrating authentication and autho
 | [desktop-winui](./desktop-winui)                                                | Microsoft.Identity.Client (MSAL.NET) 4.x     | .NET 8.0     |
 | [xplat-maui](./xplat-maui)                                                      | Microsoft.Identity.Client (MSAL.NET) 4.38.0  | .NET 6.0     |
 
-> **Note:**  
+> [!NOTE]  
 > All samples use the latest supported versions of the Microsoft identity libraries and are configured for secure, modern authentication scenarios.
 
 ---
@@ -37,10 +37,10 @@ You will need the following to run any of these samples
     ```sh
     git clone https://github.com/MicrosoftDocs/ms-identity-docs-code-dotnet.git
     ```
-2. Navigate to the sample you have downloaded by using the following command
+2. Navigate to the desktop app folder in the sample you have downloaded by using the following command;
 
     ```sh
-    cd ms-identity-docs-code-dotnet/4-desktop-apps/<sample-folder>
+    cd ms-identity-docs-code-dotnet/4-desktop-apps/
     ```
 ---
 

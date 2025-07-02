@@ -93,7 +93,7 @@ export const createClaimsTable = (claims) => {
                 populateClaim(
                     key,
                     claims[key],
-                    'The oid (user’s object id) is the only claim that should be used to uniquely identify a user in an Microsoft Entra tenant. The token might have one or more of the following claim, that might seem like a unique identifier, but is not and should not be used as such.',
+                    'The oid (user’s object id) is the only claim that should be used to uniquely identify a user in a Microsoft Entra tenant. The token might have one or more of the following claim, that might seem like a unique identifier, but is not and should not be used as such.',
                     index,
                     claimsObj
                 );

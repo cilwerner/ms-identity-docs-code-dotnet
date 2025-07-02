@@ -1,4 +1,4 @@
-# Using on-prem AD Security Groups in Applications registered in an Microsoft Entra tenant
+# Using on-prem AD Security Groups in Applications registered in a Microsoft Entra tenant
 
 ## Scenario
 
@@ -6,11 +6,11 @@ You have an AD FS application that uses on-prem Active Directory security groups
 
 ### About the sample
 
-This documentation guides you how to configure an Microsoft Entra application to include the security groups from an on-prem Active Directory.
+This documentation guides you how to configure a Microsoft Entra application to include the security groups from an on-prem Active Directory.
 
 ### Prerequisites
 
-- An Microsoft Entra (Microsoft Entra) tenant. For more information on how to get an Microsoft Entra tenant, see [How to get an Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
+- A Microsoft Entra tenant. For more information on how to get a Microsoft Entra tenant, see [How to get a Microsoft Entra tenant](https://learn.microsoft.com/entra/identity-platform/quickstart-create-new-tenant)
 - [Microsoft Entra Connect](https://learn.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis) configured on a domain-joined machine
 
 ## Migrate Security Groups

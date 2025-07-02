@@ -6,10 +6,10 @@ This folder contains a collection of .NET web application samples demonstrating 
 
 | 📁 Folder Name                                     | 🔑 Authentication Libraries Used                             | 🏷️ .NET Version  |
 |-----------------------------------------------------|--------------------------------------------------------------|------------------|
-| [web-app-aspnet](./web-app-aspnet)                  | Microsoft.Identity.Web, Microsoft.Identity.Client (MSAL.NET) | .NET 8.0         |
+| [web-app-aspnet-core](./web-app-aspnetcore)                  | Microsoft.Identity.Web, Microsoft.Identity.Client (MSAL.NET) | .NET 8.0         |
 | [web-app-blazor-server](./web-app-blazor-server)    | Microsoft.Identity.Web, Microsoft.Identity.Client (MSAL.NET) | .NET 8.0         |
 
-> **Note:**  
+> [!NOTE]
 > All samples use the latest supported versions of the Microsoft identity libraries and are configured for secure, modern authentication scenarios.
 
 ---
@@ -33,10 +33,11 @@ You will need the following to run any of these samples:
     ```sh
     git clone https://github.com/your-org/ms-identity-docs-code-dotnet.git
     ```
-2. Navigate to the sample you have downloaded by using the following command:
+
+2. Navigate to the web app folder in the sample you have downloaded by using the following command;
 
     ```sh
-    cd ms-identity-docs-code-dotnet/1-web-apps/<sample-folder>
+    cd ms-identity-docs-code-dotnet/1-web-apps
     ```
 
 ---
@@ -44,7 +45,7 @@ You will need the following to run any of these samples:
 ## 📚 Resources
 
 - [Microsoft Identity Platform Documentation](https://learn.microsoft.com/entra/identity-platform/)
-- [Microsoft.Identity.Web Library](https://learn.microsoft.com/entra/identity-platform/microsoft-identity-web)
+- [Microsoft.Identity.Web Library](https://learn.microsoft.com/entra/msal/dotnet/microsoft-identity-web/)
 - [MSAL.NET Library](https://learn.microsoft.com/entra/identity-platform/msal-overview)
 - [Microsoft Entra App Registration](https://learn.microsoft.com/entra/identity-platform/quickstart-register-app)
 - [Securing ASP.NET Core with Microsoft Identity](https://learn.microsoft.com/aspnet/core/security/authentication/identity)
