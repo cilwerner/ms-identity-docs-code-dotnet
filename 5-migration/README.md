@@ -46,13 +46,7 @@ We have also covered the following topics in some detcail as they might play a b
 | [5. Using Security groups](./5-security-groups/README.md) | Using on-premise Active Directory security groups in applications migrated to a Microsoft Entra tenant. |
 | [6. Convert from SAML to OIDC](./6-saml-to-oidc/README.md) | Migrate a SAML ASP.NET application to use [OAuth 2.0 and OpenID Connect](https://learn.microsoft.com/entra/identity-platform/v2-protocols).|
 
-## We'd love your feedback!
-
-Were we successful in addressing your learning objective? [Do consider taking a moment to share your experience with us.](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR73pcsbpbxNJuZCMKN0lURpUODFCRVg4VTk2QUE2VEFPMUZKSEJNUFhWUyQlQCN0PWcu)
-
-We're always listening, and if you want to get in touch with you directly, send an email to <aadappfeedback@microsoft.com>.
-
-## Community Help and Support
+## 💬 Community Help and Support
 
 Use [Stack Overflow](http://stackoverflow.com/questions/tagged/msal) to get support from the community.
 
@@ -60,7 +54,11 @@ If you find a bug in the sample, raise the issue on [GitHub Issues](../issues).
 
 To provide feedback on or suggest features for Microsoft Entra ID, visit [User Voice](https://feedback.azure.com/forums/169401-azure-active-directory).
 
-## Contributing
+## 🤝 Contributing
+
+Were we successful in addressing your learning objective? [Do consider taking a moment to share your experience with us.](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR73pcsbpbxNJuZCMKN0lURpUODFCRVg4VTk2QUE2VEFPMUZKSEJNUFhWUyQlQCN0PWcu)
+
+We're always listening, and if you want to get in touch with you directly, send an email to <aadappfeedback@microsoft.com>.
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us

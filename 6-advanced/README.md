@@ -52,7 +52,7 @@ Today, most background processes that need to work with user's data without them
    - Navigate to the [Sharing the MSAL token cache between a web app and a background console worker app](./background-console-worker-app-webapp/README.md) tutorial where we'll learn about how to share the token cache between a Web App that signs-in users and a background console worker process.
    - Navigate to the [Share the MSAL token cache between a web app, its web API and a background console worker app](./background-console-worker-app-webapi/README.md) tutorial where we'll learn about how to share the token cache between a Web App that signs-in users, its backed Web API and a background console worker process.
 
-## More information
+## ℹ️ More information
 
 For more information, visit the following links:
 
@@ -61,21 +61,21 @@ For more information, visit the following links:
 - Learn how to enable distributed caches in [token cache serialization](https://github.com/AzureAD/microsoft-identity-web/wiki/token-cache-serialization)
 - [Use HttpClientFactory to implement resilient HTTP requests](https://learn.microsoft.com/dotnet/standard/microservices-architecture/implement-resilient-applications/use-httpclientfactory-to-implement-resilient-http-requests) used by the Graph custom service
 
-## Community Help and Support
+## 💬 Community Help and Support
 
 Use [Stack Overflow](http://stackoverflow.com/questions/tagged/msal) to get support from the community.
 Ask your questions on Stack Overflow first and browse existing issues to see if someone has asked your question before.
 Make sure that your questions or comments are tagged with [`msal` `dotnet` `azure-active-directory`].
 
-If you find a bug in the sample, please raise the issue on [GitHub Issues](../../issues).
+If you find a bug in the sample, please raise the issue on [GitHub Issues](../issues).
 
 To provide a recommendation, visit the following [User Voice page](https://feedback.azure.com/forums/169401-azure-active-directory).
 
-## Contributing
+## 🤝 Contributing
 
 This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
 
-## Code of Conduct
+## 📜 Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
 For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments
